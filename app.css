@@ -28,6 +28,12 @@
     .color-00 {
         color: #002C6D;
     }
+    .opacity-22 {
+        opacity: 0.22;
+    }
+    .opacity-72 {
+        opacity: 0.72;
+    }
     .first-btn {
         @apply py-[7px] px-[26px];
     }

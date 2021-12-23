@@ -367,6 +367,11 @@ body {
         }
     }
 }
+@media (max-width: 765px) {
+    .account-section {
+        padding-bottom: 0 !important;
+    }
+}
 @media (max-width: 700px) {
     .services-list {
         li > .services-list-item {

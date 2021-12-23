@@ -15,11 +15,11 @@
 </head>
 <body>
     
-    <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#10A0E7] border-opacity-[0.42]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;" class="navbar">
+    <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#10A0E7] border-opacity-[0.42]; cls-inactive: uk-navbar-transparent z-[9] mt-[32px]; top: 200;" class="navbar">
         <header class="header absolute top-0 left-0 w-full z-10" uk-scrollspy="target: .animateRight; cls: uk-animation-slide-left-small; delay: 300;">
             
             <div class="uk-container uk-container-large">
-                <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px] sm:py-[62px]">
+                <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px] sm:py-[30px]">
                     
                     <div class="uk-navbar-left w-[300px] uk-padding-remove-left">
                         <div>
@@ -76,15 +76,15 @@
                             <div class="uk-hidden@l">
                                 <div class="text-[#1d1d1b]">
                                     <a href="javascript:void(0);" uk-toggle="target: #offcanvas-flip" class="text-[#1d1d1b] hover-link">
-                                        <ul class="uk-flex uk-flex-column space-y-[2px]">
+                                        <ul class="uk-flex uk-flex-column space-y-[3px] items-end">
                                             <li>
-                                                <hr class="border-none w-[16px] h-[2px] bg-[#1d1d1b]">
+                                                <hr class="border-none w-[22px] h-[2px] bg-[#1d1d1b] rounded-[6px]">
                                             </li>
                                             <li>
-                                                <hr class="border-none w-[16px] h-[2px] bg-[#1d1d1b]">
+                                                <hr class="border-none w-[20px] h-[2px] bg-[#1d1d1b] rounded-[6px]">
                                             </li>
                                             <li>
-                                                <hr class="border-none w-[16px] h-[2px] bg-[#1d1d1b]">
+                                                <hr class="border-none w-[16px] h-[2px] bg-[#1d1d1b] rounded-[6px]">
                                             </li>
                                         </ul>                                           
                                     </a>
@@ -655,7 +655,7 @@
     </div>
 </section>
 
-<section class="account-section uk-section bg-no-repeat uk-position-relative w-full h-full bg-cover darken-blue-gradient uk-margin-large-top" style="background-image: url('../assets/img/main/quotection-img.png');">
+<section class="account-section uk-section bg-no-repeat uk-position-relative w-full h-full bg-cover uk-margin-large-top" style="background-image: url('../assets/img/main/quotection-img.png');">
     <div class="uk-container uk-container-large z-[2] uk-position-relative">
         <div class="uk-flex-between uk-flex-middle" uk-grid>
             <div class="xl:w-[780px] 2xl:w-[860px]">
@@ -705,7 +705,7 @@
                     <path d="M6.14874 0.0263672L0.850098 5.32501L25.4954 29.9703L50.1407 5.32501L44.8421 0.0263672L25.4954 19.373L6.14874 0.0263672Z" fill="#EFEFEF"/>
                 </svg>                             
             </div>
-            <div class="arrow-up uk-position-absolute top-[75px] right-[96px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
+            <div class="arrow-up uk-position-absolute top-[77px] right-[96px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
                 <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.55125 12.4241L0.427246 10.3001L10.3065 0.420898L20.1857 10.3001L18.0617 12.4241L10.3065 4.6689L2.55125 12.4241Z" fill="#EFEFEF"/>
                 </svg>                  
@@ -869,7 +869,7 @@
                                     </div>
                                     <p class="color-00 opacity-72 ml-[12px] uk-width-expand">
                                         Eski davr uchun buxglateryani
-avtomatlashtirish
+                                        avtomatlashtirish
                                     </p>
                                 </li>
                             </ul>
@@ -958,7 +958,7 @@ avtomatlashtirish
                                 <p class="color-00 font-600">To‘liqroq ma‘lumot</p>
                             </a>
                         </div>
-                    
+                        
                         
                         <div class="absolute bottom-0 right-0 md:w-[610px] h-[300px] z-[1] mt-[40px] md:mt-0">
                             <div class="acount-section-math-wrapper w-full h-full uk-position-relative">
@@ -1151,6 +1151,133 @@ avtomatlashtirish
                     </div>
                 </li>
             </ul>
+        </div>
+    </div>
+</section>
+
+<section class="account-section uk-section bg-no-repeat uk-position-relative w-full h-full bg-cover uk-margin-large-top" style="background-image: url('../assets/img/main/catalogue-img.png');">
+    <div class="uk-container uk-container-large z-[2] uk-position-relative">
+        <div class="uk-text-center">
+            <div class="lg:w-[780px] 2xl:w-[860px] mx-auto">
+                <h2 class="text-[#fff] text-[26px] sm:text-[36px] 2xl:text-[42px] font-bold font-gilroy">
+                    Agar xizmatlarimiz sizni qiziqtirgan bo’sa
+                    tariflarimizni yuklab oling
+                </h2>
+                <div class="mt-[50px] uk-display-inline-block text-[#fff]">
+                    <a href="../assets/img/main/settings-icon.png" target="_blank" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500">                                 
+                        Yuklab olish
+                        <svg class="ml-[12px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11.5098L12 14.5098L15 11.5098" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 14.5098V6.50977" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 16.5098C9.89 17.8098 14.11 17.8098 18 16.5098" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="md:absolute bottom-0 left-0 md:w-[610px] h-[300px] z-[1] mt-[40px] md:mt-0 hidden lg:block">
+        <div class="acount-section-math-wrapper w-full h-full uk-position-relative">
+            <div class="square-root uk-position-absolute top-[25] left-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
+                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95486 11.7871C8.36865 11.7871 8.77888 11.623 9.08209 11.3162L12.5066 7.89171L11.2224 6.60752L8.16889 9.66103V0.935692C8.16889 0.625347 7.91562 0.37207 7.60527 0.37207H0.488736V2.18777H6.35676V10.1854C6.35676 10.8346 6.74558 11.4125 7.34487 11.6622C7.54107 11.7478 7.74796 11.7871 7.95486 11.7871Z" fill="#EFEFEF"/>
+                </svg>                                                                       
+            </div>
+            <div class="arrow-down uk-position-absolute top-[25px] left-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
+                <svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.14874 0.0263672L0.850098 5.32501L25.4954 29.9703L50.1407 5.32501L44.8421 0.0263672L25.4954 19.373L6.14874 0.0263672Z" fill="#EFEFEF"/>
+                </svg>                             
+            </div>
+            <div class="arrow-up uk-position-absolute top-[77px] left-[96px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
+                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.55125 12.4241L0.427246 10.3001L10.3065 0.420898L20.1857 10.3001L18.0617 12.4241L10.3065 4.6689L2.55125 12.4241Z" fill="#EFEFEF"/>
+                </svg>                  
+            </div>
+            <div class="division uk-position-absolute bottom-[0] left-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
+                <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M93.0075 41.7871H0.630371V55.8483H93.0075V41.7871Z" fill="#EFEFEF"/>
+                    <path d="M45.3782 22.338C51.4253 22.338 56.3274 17.4359 56.3274 11.3888C56.3274 5.34165 51.4253 0.439453 45.3782 0.439453C39.3311 0.439453 34.429 5.34165 34.429 11.3888C34.429 17.4359 39.3311 22.338 45.3782 22.338Z" fill="#EFEFEF"/>
+                    <path d="M45.3774 94.4004C51.4245 94.4004 56.3268 89.4983 56.3268 83.4512C56.3268 77.4041 51.4245 72.502 45.3774 72.502C39.3303 72.502 34.4282 77.4041 34.4282 83.4512C34.4282 89.4983 39.3303 94.4004 45.3774 94.4004Z" fill="#EFEFEF"/>
+                </svg>                                             
+            </div>
+            <div class="equality uk-position-absolute bottom-[0] left-[174px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
+                <svg width="47" height="25" viewBox="0 0 47 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M46.7802 0.331055H0.151367V7.42865H46.7802V0.331055Z" fill="#EFEFEF"/>
+                    <path d="M46.7802 17.0137H0.151367V24.1113H46.7802V17.0137Z" fill="#EFEFEF"/>
+                </svg>                                                 
+            </div>
+            <div class="plus uk-position-absolute bottom-[0] right-[35px] sm:right-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.8231 9.31348H0.627197V12.5398H21.8231V9.31348Z" fill="#EFEFEF"/>
+                    <path d="M12.8384 0.328125H9.61206V21.524H12.8384V0.328125Z" fill="#EFEFEF"/>
+                </svg>                                     
+            </div>
+            <div class="arrow-down-smaller uk-position-absolute bottom-[0] right-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
+                <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.65438 0.554688L0.869141 2.33993L9.17273 10.6435L17.4763 2.33993L15.6911 0.554688L9.17273 7.07303L2.65438 0.554688Z" fill="#EFEFEF"/>
+                </svg>                                                       
+            </div>
+        </div>
+    </div>
+    
+    <div class="lg:absolute bottom-0 right-0 md:w-[610px] h-[300px] z-[1] mt-[40px] lg:mt-0 ml-auto">
+        <div class="acount-section-math-wrapper w-full h-full uk-position-relative">
+            <div class="arrow-down uk-position-absolute top-[25px] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
+                <svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.14874 0.0263672L0.850098 5.32501L25.4954 29.9703L50.1407 5.32501L44.8421 0.0263672L25.4954 19.373L6.14874 0.0263672Z" fill="#EFEFEF"/>
+                </svg>                             
+            </div>
+            <div class="division uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
+                <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M93.0075 41.7871H0.630371V55.8483H93.0075V41.7871Z" fill="#EFEFEF"/>
+                    <path d="M45.3782 22.338C51.4253 22.338 56.3274 17.4359 56.3274 11.3888C56.3274 5.34165 51.4253 0.439453 45.3782 0.439453C39.3311 0.439453 34.429 5.34165 34.429 11.3888C34.429 17.4359 39.3311 22.338 45.3782 22.338Z" fill="#EFEFEF"/>
+                    <path d="M45.3774 94.4004C51.4245 94.4004 56.3268 89.4983 56.3268 83.4512C56.3268 77.4041 51.4245 72.502 45.3774 72.502C39.3303 72.502 34.4282 77.4041 34.4282 83.4512C34.4282 89.4983 39.3303 94.4004 45.3774 94.4004Z" fill="#EFEFEF"/>
+                </svg>                                             
+            </div>
+            <div class="equality uk-position-absolute bottom-[0] right-[174px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
+                <svg width="47" height="25" viewBox="0 0 47 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M46.7802 0.331055H0.151367V7.42865H46.7802V0.331055Z" fill="#EFEFEF"/>
+                    <path d="M46.7802 17.0137H0.151367V24.1113H46.7802V17.0137Z" fill="#EFEFEF"/>
+                </svg>                                                 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="uk-section uk-margin-large-top">
+    <div class="uk-container uk-container-large">
+        <div class="uk-grid-large uk-flex-middle uk-flex-center uk-flex-between@l" uk-grid>
+            <div class="uk-width-expand@l">
+                <h2 class="heading-second color-00">
+                    Almudaning kelib chiqishi
+                    va uning asosiy maqsadi
+                </h2>
+                <p class="text-lg color-00 text-opacity-[0.72] mt-[32px] 2xl:w-[90%]">
+                    Oʻzbekiston Respublikasida ichki bozorni rivojlantirishga koʻp eʼtibor berilayapti. Bu oʻz navbatida korxonani rivojlantirish uchun nafaqat tadbirkorlik boʻlishi kerak, balki soliq va moliyaviy faoliyatni tushinadigan buxgalter ham kerak boʻladi. Ayni vatqda baʼzi bir insonlar tomonidan ishiga sovuq qonlik bilan yondashish natijasida tadbirkorlarning omonatiga hiyonat kuchaygan va hisob kitoblarda aniqlik yoʻqolgan.
+                </p>
+                <p class="text-lg color-00 text-opacity-[0.72] mt-[26px] 2xl:w-[90%]">
+                    Bu oʻz navbatida biznesni orqaga toradigan omil hisoblanadi. Jamiyatda bu kamchiliklarni oldini olish maqsadida ALMUDA korxonasi oʻz faoliyatini boshlagan. Bizning korxonamizda tadbirkorlarning hisob kitoblarda aniqlik, ishonchlilik va Omonatdorlikga e'tibor berilgan
+                </p>
+                <h5 class="sm:text-[24px] font-600 color-00 font-gilroy mt-[32px]">
+                    Asosiy maqsadimiz:
+                </h5>
+                <div class="uk-flex uk-flex-middle mt-[12px] sm:mt-[32px]">
+                    <div class="mr-[25px] uk-visible@s">
+                        <img class="w-[75px]" src="../assets/img/main/goal-point-icon.png" alt="point icon">
+                    </div>
+                    <div class="md:w-[70%]">
+                        <p class="text-[20px] sm:text-[26px] xl:text-[32px] font-600 color-00 xl:leading-[39px]">
+                            Omonatga hiyonatni yo’qotish
+                            va hissob kitobni aniqligi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-center">
+                <img class="w-full md:w-[600px] object-cover" src="../assets/img/main/goal-img.png">
+            </div>
         </div>
     </div>
 </section>

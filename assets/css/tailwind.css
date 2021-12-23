@@ -791,6 +791,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 20px;
 }
 
+.top-\[76px\] {
+  top: 76px;
+}
+
+.top-\[77px\] {
+  top: 77px;
+}
+
+.left-\[96px\] {
+  left: 96px;
+}
+
+.left-\[174px\] {
+  left: 174px;
+}
+
+.left-\[140px\] {
+  left: 140px;
+}
+
+.right-\[35px\] {
+  right: 35px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -813,6 +837,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-\[10\] {
   z-index: 10;
+}
+
+.z-\[9\] {
+  z-index: 9;
 }
 
 .mx-auto {
@@ -919,6 +947,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-\[-120px\] {
   margin-bottom: -120px;
+}
+
+.mt-\[26px\] {
+  margin-top: 26px;
+}
+
+.mt-\[3\] {
+  margin-top: 3;
+}
+
+.ml-\[25px\] {
+  margin-left: 25px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-\[25px\] {
+  margin-right: 25px;
+}
+
+.mt-\[24px\] {
+  margin-top: 24px;
 }
 
 .flex {
@@ -1137,6 +1189,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 25px;
 }
 
+.w-\[18px\] {
+  width: 18px;
+}
+
+.w-\[22px\] {
+  width: 22px;
+}
+
+.w-\[24px\] {
+  width: 24px;
+}
+
+.w-\[75px\] {
+  width: 75px;
+}
+
+.w-\[75\%\] {
+  width: 75%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[780px\] {
+  width: 780px;
+}
+
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: var(--tw-transform);
@@ -1144,6 +1224,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
+  transform: var(--tw-transform);
+}
+
+.rotate-\[45deg\] {
+  --tw-rotate: 45deg;
+  transform: var(--tw-transform);
+}
+
+.rotate-\[-45deg\] {
+  --tw-rotate: -45deg;
   transform: var(--tw-transform);
 }
 
@@ -1163,6 +1253,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(2px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2px * var(--tw-space-y-reverse));
+}
+
+.space-y-\[3px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3px * var(--tw-space-y-reverse));
 }
 
 .rounded-full {
@@ -1187,6 +1283,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-\[36px\] {
   border-radius: 36px;
+}
+
+.rounded-\[6px\] {
+  border-radius: 6px;
 }
 
 .border-2 {
@@ -1316,6 +1416,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 30px;
 }
 
+.py-\[62px\] {
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.py-\[40px\] {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .pt-\[70px\] {
   padding-top: 70px;
 }
@@ -1326,6 +1441,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-\[5px\] {
   padding-bottom: 5px;
+}
+
+.pt-\[32px\] {
+  padding-top: 32px;
 }
 
 .text-lg {
@@ -1358,8 +1477,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 28px;
 }
 
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.leading-\[39\[x\]\] {
+  line-height: 39[x];
+}
+
+.leading-\[39px\] {
+  line-height: 39px;
 }
 
 .text-\[\#222222\] {
@@ -1424,6 +1573,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 170px;
   }
 
+  .sm\:right-\[170px\] {
+    right: 170px;
+  }
+
   .sm\:mt-\[42px\] {
     margin-top: 42px;
   }
@@ -1438,6 +1591,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:ml-\[24px\] {
     margin-left: 24px;
+  }
+
+  .sm\:ml-\[25px\] {
+    margin-left: 25px;
+  }
+
+  .sm\:mt-\[32px\] {
+    margin-top: 32px;
   }
 
   .sm\:h-\[100vh\] {
@@ -1488,6 +1649,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 70%;
   }
 
+  .sm\:w-\[602px\] {
+    width: 602px;
+  }
+
+  .sm\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .sm\:w-\[76\%\] {
+    width: 76%;
+  }
+
+  .sm\:w-\[85\%\] {
+    width: 85%;
+  }
+
+  .sm\:w-\[90\%\] {
+    width: 90%;
+  }
+
   .sm\:rounded-\[42px\] {
     border-radius: 42px;
   }
@@ -1495,6 +1676,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:py-\[62px\] {
     padding-top: 62px;
     padding-bottom: 62px;
+  }
+
+  .sm\:py-\[30px\] {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .sm\:py-\[60px\] {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .sm\:text-\[150px\] {
@@ -1508,6 +1699,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:text-\[36px\] {
     font-size: 36px;
   }
+
+  .sm\:text-\[26px\] {
+    font-size: 26px;
+  }
+
+  .sm\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .sm\:leading-\[39px\] {
+    line-height: 39px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1519,12 +1722,46 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:w-\[182px\] {
     width: 182px;
   }
 
   .md\:w-\[610px\] {
     width: 610px;
+  }
+
+  .md\:w-\[602px\] {
+    width: 602px;
+  }
+
+  .md\:w-\[600px\] {
+    width: 600px;
+  }
+
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:w-\[780px\] {
+    width: 780px;
   }
 }
 
@@ -1557,6 +1794,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:text-\[32px\] {
     font-size: 32px;
   }
+
+  .xl\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .xl\:leading-\[39px\] {
+    line-height: 39px;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -1566,6 +1811,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .\32xl\:w-\[860px\] {
     width: 860px;
+  }
+
+  .\32xl\:w-\[90\%\] {
+    width: 90%;
   }
 
   .\32xl\:space-x-\[30px\] > :not([hidden]) ~ :not([hidden]) {

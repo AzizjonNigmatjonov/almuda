@@ -41,21 +41,6 @@ body {
     z-index: 2 !important;
     border-radius: 42px;
 }
-.darken-blue-gradient {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.darken-blue-gradient::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #002C6D;
-    opacity: 0.82;
-}
 
 // navbar start
 .uk-offcanvas-flip .uk-open>.uk-offcanvas-bar {
@@ -114,16 +99,6 @@ body {
     }
 }
 // account section start
-.account-section::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #222;
-    opacity: 0.42;
-}
 
 // why work us start
 .why-work-us-list > li > div {
@@ -370,6 +345,9 @@ body {
 @media (max-width: 765px) {
     .account-section {
         padding-bottom: 0 !important;
+    }
+    .header.uk-navbar-transparent {
+        margin-top: 0px !important;
     }
 }
 @media (max-width: 700px) {

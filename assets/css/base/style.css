@@ -35,6 +35,10 @@ body {
   background-size: cover;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .gradient-blue {
   position: absolute;
   width: 100%;
@@ -121,6 +125,30 @@ body {
 
 .services-list li ul li {
   margin-top: 12px !important;
+}
+
+.form-section form input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.72;
+}
+
+.form-section form input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.72;
+}
+
+.form-section form input::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.72;
+}
+
+.form-section form input::placeholder {
+  color: #fff;
+  opacity: 0.72;
+}
+
+.form-section form button {
+  margin-left: 20px;
 }
 
 @-webkit-keyframes topCircle {
@@ -561,6 +589,30 @@ body {
   }
 }
 
+@media (max-width: 1480px) {
+  .partner-steps-wrapper {
+    padding: 0px 120px !important;
+  }
+  .partner-steps-wrapper .partner-step-1 {
+    left: -120px;
+  }
+  .partner-steps-wrapper .partner-step-2 {
+    left: 10px;
+  }
+  .partner-steps-wrapper .partner-step-3 {
+    left: 300px;
+  }
+  .partner-steps-wrapper .partner-step-4 {
+    left: 550px;
+  }
+  .partner-steps-wrapper .partner-step-5 {
+    right: -30px;
+  }
+  .partner-steps-wrapper .partner-step-6 {
+    right: -120px;
+  }
+}
+
 @media (max-width: 1440px) {
   .main-contents-wrapper {
     margin-left: 40px !important;
@@ -577,9 +629,43 @@ body {
   }
 }
 
+@media (max-width: 1400px) {
+  .footer-contcat-details ul li:nth-child(3) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: 22px !important;
+  }
+}
+
+@media (max-width: 1360px) {
+  .footer-social-details ul li:nth-child(3) {
+    margin-top: 22px !important;
+  }
+}
+
 @media (max-width: 1320px) {
   .services-list li > .services-list-item {
     height: 540px;
+  }
+  .partner-steps-wrapper .partner-step-2 {
+    left: -20px;
+  }
+  .partner-steps-wrapper .partner-step-3 {
+    left: 250px;
+  }
+  .partner-steps-wrapper .partner-step-4 {
+    left: 460px;
+  }
+  .partner-steps-wrapper .partner-step-5 {
+    right: -60px;
+  }
+  .partner-steps-wrapper .partner-step-6 {
+    right: -140px;
   }
 }
 
@@ -604,6 +690,15 @@ body {
   }
 }
 
+@media (max-width: 1023px) {
+  .catalogue-section {
+    padding-bottom: 0 !important;
+  }
+  .form-section {
+    padding-bottom: 0 !important;
+  }
+}
+
 @media (max-width: 960px) {
   .main-contents-wrapper {
     margin-left: 30px !important;
@@ -623,6 +718,9 @@ body {
   }
   .header.uk-navbar-transparent {
     margin-top: 0px !important;
+  }
+  .form-section form button {
+    margin-left: 0px;
   }
 }
 

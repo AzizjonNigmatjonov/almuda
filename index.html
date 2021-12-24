@@ -14,9 +14,17 @@
     
 </head>
 <body>
+
+    <div id="overlay" class="uk-position-fixed uk-width-1-1 uk-height-1-1 uk-position-top-left uk-flex uk-flex-center uk-flex-middle" style="background-color: #fff !important; z-index: 10001;">
+        <div id="loader">
+            <div class="flex flex-col items-center justify-center uk-cover-container">
+                <img class="w-[170px]" src="../assets/img/logo/almuda.svg" alt="Brand">
+            </div>
+        </div>
+    </div>
     
-    <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#10A0E7] border-opacity-[0.42]; cls-inactive: uk-navbar-transparent z-[9] mt-[32px]; top: 200;" class="navbar">
-        <header class="header absolute top-0 left-0 w-full z-10" uk-scrollspy="target: .animateRight; cls: uk-animation-slide-left-small; delay: 300;">
+    <div id="header" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#10A0E7] border-opacity-[0.42]; cls-inactive: uk-navbar-transparent z-[9] mt-[32px]; top: 200;" class="navbar">
+        <header class="header absolute top-0 left-0 w-full z-10">
             
             <div class="uk-container uk-container-large">
                 <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px] sm:py-[30px]">
@@ -34,27 +42,27 @@
                     <div class="uk-visible@l uk-navbar-center uk-margin-remove-top">
                         <ul class="uk-flex-middle" uk-grid>
                             <li class="text-[#222222] uk-padding-remove-left">
-                                <a href="about.html" class="text-lg font-500 color-222 hover-link uk-animation-fade">
+                                <a href="#advantages" class="text-lg font-500 color-222 hover-link uk-animation-fade">
                                     Afzalliklar
                                 </a>
                             </li>
                             <li class="text-[#222222]">
-                                <a href="about.html" class="text-lg font-500 color-222 hover-link uk-animation-fade">
+                                <a href="#whyUS" class="text-lg font-500 color-222 hover-link uk-animation-fade">
                                     Nega aynan biz?
                                 </a>
                             </li>
                             <li class="text-[#222222]">
-                                <a href="about.html" class="text-lg font-500 color-222 hover-link uk-animation-fade">
+                                <a href="#services" class="text-lg font-500 color-222 hover-link uk-animation-fade">
                                     Xizmatlar
                                 </a>
                             </li>
                             <li class="text-[#222222]">
-                                <a href="about.html" class="text-lg font-500 color-222 hover-link uk-animation-fade">
+                                <a href="#deals" class="text-lg font-500 color-222 hover-link uk-animation-fade">
                                     Tariflar
                                 </a>
                             </li>
                             <li class="text-[#222222]">
-                                <a href="about.html" class="text-lg font-500 color-22 hover-link uk-animation-fade">
+                                <a href="#map" class="text-lg font-500 color-22 hover-link uk-animation-fade">
                                     Harita
                                 </a>
                             </li>
@@ -78,13 +86,13 @@
                                     <a href="javascript:void(0);" uk-toggle="target: #offcanvas-flip" class="text-[#1d1d1b] hover-link">
                                         <ul class="uk-flex uk-flex-column space-y-[3px] items-end">
                                             <li>
-                                                <hr class="border-none w-[22px] h-[2px] bg-[#1d1d1b] rounded-[6px]">
+                                                <hr class="border-none w-[24px] h-[3px] bg-[#002C6D] rounded-[6px]">
                                             </li>
                                             <li>
-                                                <hr class="border-none w-[20px] h-[2px] bg-[#1d1d1b] rounded-[6px]">
+                                                <hr class="border-none w-[22px] h-[3px] bg-[#002C6D] rounded-[6px]">
                                             </li>
                                             <li>
-                                                <hr class="border-none w-[16px] h-[2px] bg-[#1d1d1b] rounded-[6px]">
+                                                <hr class="border-none w-[18px] h-[3px] bg-[#002C6D] rounded-[6px]">
                                             </li>
                                         </ul>                                           
                                     </a>
@@ -163,7 +171,7 @@
         </header>
     </div>
     
-    <main class="uk-section uk-position-relative uk-overflow-hidden uk-padding-remove-vertical z-[1]">
+    <main class="uk-section uk-position-relative uk-overflow-hidden uk-padding-remove-vertical z-[1]" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
         <div>
             <ul class="uk-padding-remove">
                 <li class="main-contents-wrapper uk-height-1-1 uk-cover-container h-[720px] sm:h-[100vh]" style="min-height: 680px;">
@@ -173,16 +181,16 @@
                         
                         <div class="uk-flex-between uk-flex-middle" uk-grid>
                             <div class="uk-width-expand@l">
-                                <h1 class="heading color-00 font-600 font-gilroy">
+                                <h1 class="heading color-00 font-600 font-gilroy animTop">
                                     Biznesingiz uchun sifatli, 
                                     ishonchli va halol
                                     buxgalteriya xizmatlari
                                 </h1>
-                                <p class="color-222 text-[18px] mt-[12px] uk-width-3-4@s">
+                                <p class="color-222 text-[18px] mt-[12px] uk-width-3-4@s animTop">
                                     Biz xizmatlarimizda aniqlikga, tezlikga va omonatdorlikga kuchli eʼtibor qaratamiz.
                                 </p>
                                 <div class="mt-[32px] uk-display-inline-block text-[#fff]">
-                                    <a href="#" class="first-btn bg-[#10A0E7] flex items-center rounded-full text-[#fff] hover-link text-lg font-500">
+                                    <a href="#" class="first-btn bg-[#10A0E7] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 animTop hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">
                                         <svg class="mr-[15px]" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M12.4302 0.929688L18.5002 6.99969L12.4302 13.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M1.5 7H18.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -226,10 +234,10 @@
     </div>
 </main>
 
-<section class="uk-section advantage-section uk-padding-remove-top">
-    <div class="uk-container uk-container-large">
+<section id="advantages" class="uk-section advantage-section uk-padding-remove-top">
+    <div class="uk-container uk-container-large" uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
         <div class="uk-width-3-4@m uk-width-3-5@l mx-auto">
-            <h2 class="heading-second uk-text-center color-00">
+            <h2 class="heading-second uk-text-center color-00" uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
                 Buxgalteriya xizmatlarini <span class="text-[#10A0E8]">outsorsing</span> qilishning
                 afzallik tomonlari
             </h2>
@@ -237,11 +245,11 @@
         <div class="uk-visible@l border-[3px] border-[#10A0E7] border-opacity-[0.42] rounded-[42px] py-[35px] px-[65px] uk-margin-large-top">
             <div class="uk-flex-between" uk-grid>
                 <div class="xl:w-[45%]">
-                    <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto">
+                    <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto animFade">
                         Outsours korxonaning 
                         afzallik tomonlari
                     </h3>
-                    <ul class="uk-grid-small uk-child-width-1-1 mt-[30px] sm:mt-[42px]" uk-grid>
+                    <ul class="uk-grid-small uk-child-width-1-1 mt-[30px] sm:mt-[42px] animFade" uk-grid>
                         <li>
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
@@ -325,11 +333,11 @@
                 </div>
                 
                 <div class="xl:w-[45%]">
-                    <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto">
+                    <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto animFade">
                         Shaxsiy buxgalter
                         yollashning kamchiliklari
                     </h3>
-                    <ul class="uk-grid-small uk-child-width-1-1 mt-[30px] sm:mt-[42px]" uk-grid>
+                    <ul class="uk-grid-small uk-child-width-1-1 mt-[30px] sm:mt-[42px] animFade" uk-grid>
                         <li>
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
@@ -600,49 +608,49 @@
 </section>
 
 <section class="uk-section">
-    <div class="uk-container uk-container-large">
+    <div class="uk-container uk-container-large" uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
         <div class="uk-grid-large uk-flex-middle xl:px-[30px]" uk-grid>
             <div class="uk-width-1-2@l uk-flex uk-flex-center">
                 <img class="w-full sm:w-[540px] object-cover" src="../assets/img/main/headache-img.png">
             </div>
             <div class="uk-width-expand">
-                <h2 class="heading-second color-00">
+                <h2 class="heading-second color-00 animFade">
                     Qanday bosh og’riqlardan
                     qutulasiz?
                 </h2>
-                <p class="text-lg color-00 text-opacity-[0.72] mt-[10px] sm:w-[70%]">
+                <p class="text-lg color-00 text-opacity-[0.72] mt-[10px] sm:w-[70%] animFade">
                     O’z muammolaringizga oson va samarali yechim toping!
                 </p>
-                <div class="mt-[30px] sm:mt-[60px] ">
-                    <div class="uk-child-width-1-1" uk-grid>
+                <div class="mt-[30px] sm:mt-[60px]" uk-scrollspy="target: .animRight; cls: uk-animation-slide-right-medium; delay: 100; repeat: true">
+                    <div class="uk-child-width-1-1" uk-grid uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 200; repeat: true">
                         <div class="uk-flex uk-flex-middle">
-                            <div>
+                            <div class="animTop">
                                 <img src="../assets/img/main/clock-icon.png" alt="clock icon">
                             </div>
                             <div class="uk-width-expand ml-[12px] sm:ml-[24px]">
-                                <p class="color-00 text-[20px] sm:text-[28px] xl:text-[32px] font-600">
+                                <p class="color-00 text-[20px] sm:text-[28px] xl:text-[32px] font-600 animRight">
                                     Yaxshi mutaxassis qidirib vaqt
                                     yo`qotishmaysiz
                                 </p>
                             </div>
                         </div>
                         <div class="uk-flex uk-flex-middle">
-                            <div>
+                            <div class="animTop">
                                 <img src="../assets/img/main/settings-icon.png" alt="settings icon">
                             </div>
                             <div class="uk-width-expand ml-[12px] sm:ml-[24px]">
-                                <p class="color-00 text-[20px] sm:text-[28px] xl:text-[32px] font-600">
+                                <p class="color-00 text-[20px] sm:text-[28px] xl:text-[32px] font-600 animRight">
                                     Buxgalteriya bo`limi nazorat qilish
                                     uchun vaqt ketqazmaysiz
                                 </p>
                             </div>
                         </div>
                         <div class="uk-flex uk-flex-middle">
-                            <div>
+                            <div class="animTop">
                                 <img src="../assets/img/main/document-icon.png" alt="documents icon">
                             </div>
                             <div class="uk-width-expand ml-[12px] sm:ml-[24px]">
-                                <p class="color-00 text-[20px] sm:text-[28px] xl:text-[32px] font-600">
+                                <p class="color-00 text-[20px] sm:text-[28px] xl:text-[32px] font-600 animRight">
                                     Hujjatlar bilan ishlash muammosidan
                                     qutilasiz
                                 </p>
@@ -659,13 +667,13 @@
     <div class="uk-container uk-container-large z-[2] uk-position-relative">
         <div class="uk-flex-between uk-flex-middle" uk-grid>
             <div class="xl:w-[780px] 2xl:w-[860px]">
-                <h2 class="text-[#fff] text-[26px] sm:text-[36px] 2xl:text-[42px] font-bold font-gilroy">
+                <h2 class="text-[#fff] text-[26px] sm:text-[36px] 2xl:text-[42px] font-bold font-gilroy animate-pulse">
                     Aniq buxgalteriya hisob-kitobi bilan
                     xarajatlarni 50% gacha kamaytirishingiz
                     mumkinligini bilarmidingiz?
                 </h2>
                 <div class="mt-[40px] uk-display-inline-block text-[#fff] uk-visible@s">
-                    <a href="#" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500">
+                    <a href="#" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">
                         <svg class="mr-[15px]" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.4302 0.929688L18.5002 6.99969L12.4302 13.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M1.5 7H18.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -675,9 +683,9 @@
                 </div>
             </div>
             <div class="uk-width-expand@l">
-                <div class="xl:ml-[70px]">
+                <div class="xl:ml-[70px] text-[#fff]">
                     <p class="text-lg text-[#fff]">Murojaat uchun:</p>
-                    <a href="#" class="text-[26px] sm:text-[36px] 2xl:text-[42px] font-gilroy text-[#fff] font-bold mt-[5px]">
+                    <a href="#" class="text-[26px] sm:text-[36px] 2xl:text-[42px] font-gilroy text-[#fff] font-bold mt-[5px] hover-link hover:text-[#ffffffde] duration-200">
                         +998 97 900 40 20
                     </a>
                 </div>
@@ -738,16 +746,16 @@
     </div>
 </section>
 
-<section class="uk-section uk-margin-large-top">
-    <div class="uk-container uk-container-large">
+<section id="whyUS" class="uk-section uk-margin-large-top">
+    <div class="uk-container uk-container-large" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
         <div class="uk-width-3-4@m uk-width-3-5@l mx-auto">
-            <h2 class="heading-second uk-text-center color-00">
+            <h2 class="heading-second uk-text-center color-00 animTop">
                 Nega aynan biz bilan ishlashingiz kerak?
             </h2>
         </div>
-        <div>
+        <div uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
             <ul class="uk-child-width-1-4@l uk-child-width-1-2@s why-work-us-list mt-[150px]" uk-grid>
-                <li>
+                <li class="animFade">
                     <div class="border-[3px] border-[#10A0E7] border-opacity-[0.72] rounded-[22px] pt-[70px] px-[20px]  uk-position-relative pb-[10px]">
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
@@ -766,7 +774,7 @@
                         </p>
                     </div>
                 </li>
-                <li>
+                <li class="animFade">
                     <div class="border-[3px] border-[#10A0E7] border-opacity-[0.72] rounded-[22px] pt-[70px] px-[20px] uk-position-relative pb-[10px]">
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
@@ -783,7 +791,7 @@
                         </p>
                     </div>
                 </li>
-                <li>
+                <li class="animFade">
                     <div class="border-[3px] border-[#10A0E7] border-opacity-[0.72] rounded-[22px] pt-[70px] px-[20px]  uk-position-relative pb-[10px]">
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
@@ -801,7 +809,7 @@
                         </p>
                     </div>
                 </li>
-                <li>
+                <li class="animFade">
                     <div class="border-[3px] border-[#10A0E7] border-opacity-[0.72] rounded-[22px] pt-[70px] px-[20px]  uk-position-relative pb-[10px]">
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
@@ -824,16 +832,16 @@
     </div>
 </section>
 
-<section class="uk-section">
-    <div class="uk-container uk-container-large">
+<section id="services" class="uk-section">
+    <div class="uk-container uk-container-large" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
         <div class="uk-width-3-4@m uk-width-3-5@l mx-auto">
-            <h2 class="heading-second uk-text-center color-00">
+            <h2 class="heading-second uk-text-center color-00 animTop">
                 Bizda qanday xizmatlar mavjud?
             </h2>
         </div>
-        <div>
-            <ul class="services-list uk-child-width-1-4@l uk-child-width-1-2@s mt-[70px]" uk-grid>
-                <li>
+        <div uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
+            <ul class="services-list uk-child-width-1-4@l uk-child-width-1-2@s mt-[40px] sm:mt-[70px]" uk-grid>
+                <li class="animFade">
                     <div class="services-list-item bg-[#fff] rounded-[22px] py-[20px] px-[30px] uk-overflow-hidden uk-position-relative">
                         <div class="uk-position-relative z-[2]">
                             <span class="color-00 opacity-22 font-600 text-[28px]">01</span>
@@ -876,9 +884,9 @@
                         </div>
                         
                         <div class="absolute bottom-[20px] left-[20px] uk-display-inline-block color-00 z-[2]">
-                            <a href="#" class="flex items-center hover-link">
+                            <a href="#" class="flex items-center hover-link group">
                                 <div class="bg-[#10A0E7] w-[40px] h-[30px] rounded-[36px] flex items-center justify-center mr-[12px]">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="group-hover:ml-[10px] duration-200" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12.0254 4.94141L17.0837 9.99974L12.0254 15.0581" stroke="white" stroke-width="1.30734" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M2.91699 10H16.942" stroke="white" stroke-width="1.30734" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>                                            
@@ -920,7 +928,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="animFade">
                     <div class="services-list-item bg-[#fff] rounded-[22px] py-[20px] px-[30px] uk-overflow-hidden uk-position-relative">
                         <div class="uk-position-relative z-[2]">
                             <span class="color-00 opacity-22 font-600 text-[28px]">02</span>
@@ -948,9 +956,9 @@
                         </div>
                         
                         <div class="absolute bottom-[20px] left-[20px] uk-display-inline-block color-00 z-[2]">
-                            <a href="#" class="flex items-center hover-link">
+                            <a href="#" class="flex items-center hover-link group">
                                 <div class="bg-[#10A0E7] w-[40px] h-[30px] rounded-[36px] flex items-center justify-center mr-[12px]">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="group-hover:ml-[10px] duration-200" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12.0254 4.94141L17.0837 9.99974L12.0254 15.0581" stroke="white" stroke-width="1.30734" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M2.91699 10H16.942" stroke="white" stroke-width="1.30734" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>                                            
@@ -989,7 +997,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="animFade">
                     <div class="services-list-item bg-[#fff] rounded-[22px] py-[20px] px-[30px] uk-overflow-hidden uk-position-relative">
                         <div class="uk-position-relative z-[2]">
                             <span class="color-00 opacity-22 font-600 text-[28px]">03</span>
@@ -1016,9 +1024,9 @@
                         </div>
                         
                         <div class="absolute bottom-[20px] left-[20px] uk-display-inline-block color-00 z-[2]">
-                            <a href="#" class="flex items-center hover-link">
+                            <a href="#" class="flex items-center hover-link group">
                                 <div class="bg-[#10A0E7] w-[40px] h-[30px] rounded-[36px] flex items-center justify-center mr-[12px]">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="group-hover:ml-[10px] duration-200" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12.0254 4.94141L17.0837 9.99974L12.0254 15.0581" stroke="white" stroke-width="1.30734" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M2.91699 10H16.942" stroke="white" stroke-width="1.30734" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>                                            
@@ -1056,7 +1064,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="animFade">
                     <div class="services-list-item bg-[#fff] rounded-[22px] py-[20px] px-[30px] uk-overflow-hidden uk-position-relative">
                         <div class="uk-position-relative z-[2]">
                             <span class="color-00 opacity-22 font-600 text-[28px]">04</span>
@@ -1110,9 +1118,9 @@
                         </div>
                         
                         <div class="absolute bottom-[20px] left-[20px] uk-display-inline-block color-00 z-[2]">
-                            <a href="#" class="flex items-center hover-link">
+                            <a href="#" class="flex items-center hover-link group">
                                 <div class="bg-[#10A0E7] w-[40px] h-[30px] rounded-[36px] flex items-center justify-center mr-[12px]">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="group-hover:ml-[10px] duration-200" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12.0254 4.94141L17.0837 9.99974L12.0254 15.0581" stroke="white" stroke-width="1.30734" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M2.91699 10H16.942" stroke="white" stroke-width="1.30734" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>                                            
@@ -1155,16 +1163,16 @@
     </div>
 </section>
 
-<section class="account-section uk-section bg-no-repeat uk-position-relative w-full h-full bg-cover uk-margin-large-top" style="background-image: url('../assets/img/main/catalogue-img.png');">
+<section id="deals" class="catalogue-section uk-section bg-no-repeat uk-position-relative w-full h-full bg-cover uk-margin-large-top" style="background-image: url('../assets/img/main/catalogue-img.png');">
     <div class="uk-container uk-container-large z-[2] uk-position-relative">
         <div class="uk-text-center">
             <div class="lg:w-[780px] 2xl:w-[860px] mx-auto">
-                <h2 class="text-[#fff] text-[26px] sm:text-[36px] 2xl:text-[42px] font-bold font-gilroy">
+                <h2 class="text-[#fff] text-[26px] sm:text-[36px] 2xl:text-[42px] font-bold font-gilroy animate-pulse">
                     Agar xizmatlarimiz sizni qiziqtirgan bo’sa
                     tariflarimizni yuklab oling
                 </h2>
                 <div class="mt-[50px] uk-display-inline-block text-[#fff]">
-                    <a href="../assets/img/main/settings-icon.png" target="_blank" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500">                                 
+                    <a href="../assets/img/main/settings-icon.png" target="_blank" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">                                 
                         Yuklab olish
                         <svg class="ml-[12px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1246,24 +1254,24 @@
     </div>
 </section>
 
-<section class="uk-section uk-margin-large-top">
+<section class="uk-section uk-margin-large-top uk-margin-large-bottom" uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
     <div class="uk-container uk-container-large">
-        <div class="uk-grid-large uk-flex-middle uk-flex-center uk-flex-between@l" uk-grid>
+        <div class="uk-grid-large uk-flex-middle uk-flex-center uk-flex-between@l xl:px-[30px]" uk-grid>
             <div class="uk-width-expand@l">
-                <h2 class="heading-second color-00">
+                <h2 class="heading-second color-00 animFade">
                     Almudaning kelib chiqishi
                     va uning asosiy maqsadi
                 </h2>
-                <p class="text-lg color-00 text-opacity-[0.72] mt-[32px] 2xl:w-[90%]">
+                <p class="text-lg color-00 mt-[32px] 2xl:w-[90%] leading-[22px] animFade">
                     Oʻzbekiston Respublikasida ichki bozorni rivojlantirishga koʻp eʼtibor berilayapti. Bu oʻz navbatida korxonani rivojlantirish uchun nafaqat tadbirkorlik boʻlishi kerak, balki soliq va moliyaviy faoliyatni tushinadigan buxgalter ham kerak boʻladi. Ayni vatqda baʼzi bir insonlar tomonidan ishiga sovuq qonlik bilan yondashish natijasida tadbirkorlarning omonatiga hiyonat kuchaygan va hisob kitoblarda aniqlik yoʻqolgan.
                 </p>
-                <p class="text-lg color-00 text-opacity-[0.72] mt-[26px] 2xl:w-[90%]">
+                <p class="text-lg color-00 mt-[26px] 2xl:w-[90%] leading-[22px] animFade">
                     Bu oʻz navbatida biznesni orqaga toradigan omil hisoblanadi. Jamiyatda bu kamchiliklarni oldini olish maqsadida ALMUDA korxonasi oʻz faoliyatini boshlagan. Bizning korxonamizda tadbirkorlarning hisob kitoblarda aniqlik, ishonchlilik va Omonatdorlikga e'tibor berilgan
                 </p>
-                <h5 class="sm:text-[24px] font-600 color-00 font-gilroy mt-[32px]">
+                <h5 class="sm:text-[24px] font-600 color-00 font-gilroy mt-[32px] animFade">
                     Asosiy maqsadimiz:
                 </h5>
-                <div class="uk-flex uk-flex-middle mt-[12px] sm:mt-[32px]">
+                <div class="uk-flex uk-flex-middle mt-[12px] sm:mt-[32px] animFade">
                     <div class="mr-[25px] uk-visible@s">
                         <img class="w-[75px]" src="../assets/img/main/goal-point-icon.png" alt="point icon">
                     </div>
@@ -1276,15 +1284,407 @@
                 </div>
             </div>
             <div class="uk-flex uk-flex-center">
-                <img class="w-full md:w-[600px] object-cover" src="../assets/img/main/goal-img.png">
+                <img class="w-full md:w-[600px] object-cover animFade" src="../assets/img/main/goal-img.png">
             </div>
         </div>
     </div>
 </section>
 
+<section id="map" class="uk-section uk-overflow-hidden" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
+    <div class="uk-container uk-container-large uk-margin-large-bottom" uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
+        <div class="uk-width-3-4@m uk-width-3-5@l mx-auto">
+            <h2 class="heading-second uk-text-center color-00 animTop">
+                Biz bilan hamkorlik haritasi
+            </h2>
+        </div>
+        <div class="mt-[152px] xl:px-[30px] partner-steps-wrapper uk-visible@l">
+            <div class="uk-position-relative" uk-parallax="stroke: 100%; viewport: .3;" style="transition: all 0.7s ease-in-out 0s; stroke-dasharray: 2019; stroke-dashoffset: 157.19;">
+                <img src="../assets/img/svg/partner-line.svg" uk-svg="stroke-animation: true" style="fill: none; color: #10A0E7;">
+                
+                <div class="uk-flex-top uk-grid-small absolute top-[-50px] left-[-30px] partner-step-1 animFade" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">01</span>
+                    </div>
+                    <div>
+                        <p class="mt-[24px] font-500 color-00 text-[22px] w-[250px]">
+                            Lead yoki qo’ngiroq
+                            bo’lishi
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-flex-top uk-grid-small absolute bottom-[-90px] left-[70px] partner-step-2 animFade" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">02</span>
+                    </div>
+                    <div>
+                        <p class="mt-[24px] font-500 color-00 text-[22px] w-[250px]">
+                            Uchrashuv va kelishuv
+                            bo’lishi
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-flex-top uk-grid-small absolute top-[-110px] left-[390px] partner-step-3 animFade" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">03</span>
+                    </div>
+                    <div>
+                        <p class="mt-[24px] font-500 color-00 text-[22px] w-[250px]">
+                            To’lov amalga <br> oshiriladi
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-flex-top uk-grid-small absolute bottom-[-90px] left-[670px] partner-step-4 animFade" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">04</span>
+                    </div>
+                    <div>
+                        <p class="mt-[24px] font-500 color-00 text-[22px] w-[250px]">
+                            Shartnomani imzolash
+                            va oldindan to'lash
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-flex-top uk-grid-small absolute top-[-110px] right-[0px] partner-step-5 animFade" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">05</span>
+                    </div>
+                    <div>
+                        <p class="mt-[24px] font-500 color-00 text-[22px] w-[250px]">
+                            Hujjatlar oldi <br>
+                            berdisi
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-flex-top uk-grid-small absolute bottom-[-25px] right-[-30px] partner-step-6 animFade" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">06</span>
+                    </div>
+                    <div>
+                        <p class="mt-[24px] font-500 color-00 text-[22px] w-[250px]">
+                            Samarali hamkorlikning
+                            boshlanishi!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="uk-hidden@l uk-child-width-1-2@m mt-[40px] uk-grid-large" uk-grid>
+            <div>
+                <div class="uk-flex-top uk-grid-small partner-step-1" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">01</span>
+                    </div>
+                    <div class="uk-width-expand">
+                        <p class="mt-[24px] font-500 color-00 text-[22px]">
+                            Lead yoki qo’ngiroq
+                            bo’lishi
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-flex-top uk-grid-small partner-step-1" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">02</span>
+                    </div>
+                    <div class="uk-width-expand">
+                        <p class="mt-[24px] font-500 color-00 text-[22px]">
+                            Uchrashuv va kelishuv
+                            bo’lishi
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-flex-top uk-grid-small partner-step-1" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">03</span>
+                    </div>
+                    <div class="uk-width-expand">
+                        <p class="mt-[24px] font-500 color-00 text-[22px]">
+                            To’lov amalga oshiriladi
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-flex-top uk-grid-small partner-step-1" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">04</span>
+                    </div>
+                    <div class="uk-width-expand">
+                        <p class="mt-[24px] font-500 color-00 text-[22px]">
+                            Shartnomani imzolash
+                            va oldindan to'lash
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-flex-top uk-grid-small partner-step-1" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">05</span>
+                    </div>
+                    <div class="uk-width-expand">
+                        <p class="mt-[24px] font-500 color-00 text-[22px]">
+                            Hujjatlar oldi
+                            berdisi
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-flex-top uk-grid-small partner-step-1" uk-grid>
+                    <div>
+                        <span class="color-00 opacity-22 font-600 text-[42px]">06</span>
+                    </div>
+                    <div class="uk-width-expand
+                    ">
+                    <p class="mt-[24px] font-500 color-00 text-[22px]">
+                        Samarali hamkorlikning
+                        boshlanishi!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="form-section uk-section bg-no-repeat uk-position-relative w-full h-full bg-cover uk-margin-large-top" style="background-image: url('../assets/img/main/form-back-img.png');">
+    <div class="uk-container uk-container-large z-[2] uk-position-relative">
+        <div>
+            <div class="uk-width-1-2@l uk-width-3-4@m">
+                <h2 class="heading-second text-[#fff] animate-pulse">
+                    Hamkorlik istagingiz yoki bron bir 
+                    moliya boyicha savollaringiz bo’lsa
+                    murojaat qiling
+                </h2>
+                <p class="text-[#fff] text-lg uk-width-3-4@s mt-[12px]">
+                    Siz bizga o’z kontaktlaringizni qoldiring va biz tez orada siz bilan 
+                    bog’lanamiz va muammolaringizga yechim berishga harakat 
+                    qilamiz 
+                </p>
+            </div>
+            <form class="mt-[42px] uk-flex-middle uk-grid-medium" uk-grid>
+                <div class="uk-width-1-1 uk-width-auto@m">
+                    <div class="sm:w-[320px]">
+                        <input type="text" placeholder="Muhammadaziz" class="focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-width-auto@s">
+                    <div class="sm:w-[320px]">
+                        <input type="text" placeholder="+998 9X XXX XX XX" class="focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
+                    </div>
+                </div>
+                <div>
+                    <button class="rounded-full w-[60px] h-[60px] flex items-center justify-center group" style="background: rgba(16, 160, 232, 0.72);">
+                        <div class="bg-[#10A0E7] w-[50px] h-[50px] group-hover:w-[60px] group-hover:h-[60px] duration-200 rounded-full flex items-center justify-center">
+                            <svg class="group-hover:rotate-[360deg] duration-200" width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.473949 3.25426L3.56807 0.160156L17.9595 14.5516L3.56807 28.9429L0.473948 25.8488L11.7713 14.5516L0.473949 3.25426Z" fill="#EFEFEF"/>
+                            </svg> 
+                        </div>                           
+                    </button>
+                </div>
+            </form>
+            <p class="text-[12px] text-[#fff] mt-[32px]">Siz bu tugmani bosish orqali bu malumotlarda foydalanishga ruxsat berasiz. </p>
+        </div>
+    </div>
+    
+    <div class="lg:absolute bottom-0 right-0 md:w-[610px] h-[300px] z-[1] mt-[40px] lg:mt-0 ml-auto">
+        <div class="acount-section-math-wrapper w-full h-full uk-position-relative">
+            <div class="square-root uk-position-absolute top-[25] right-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.90518 13.7952C5.42497 13.7952 4.94889 13.6048 4.59701 13.2488L0.622803 9.27455L2.11313 7.78422L5.6568 11.3279V1.20195C5.6568 0.841784 5.95072 0.547852 6.31089 0.547852H14.5698V2.65501H7.75981V11.9364C7.75981 12.6899 7.30858 13.3605 6.61309 13.6503C6.3854 13.7497 6.14529 13.7952 5.90518 13.7952Z" fill="#EFEFEF"/>
+                </svg>                                                      
+            </div>
+            <div class="arrow-down uk-position-absolute top-[25px] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
+                <svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.14874 0.0263672L0.850098 5.32501L25.4954 29.9703L50.1407 5.32501L44.8421 0.0263672L25.4954 19.373L6.14874 0.0263672Z" fill="#EFEFEF"/>
+                </svg>                             
+            </div>
+            <div class="arrow-up uk-position-absolute top-[77px] right-[96px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
+                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.55125 12.4241L0.427246 10.3001L10.3065 0.420898L20.1857 10.3001L18.0617 12.4241L10.3065 4.6689L2.55125 12.4241Z" fill="#EFEFEF"/>
+                </svg>                  
+            </div>
+            <div class="division uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
+                <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M93.0075 41.7871H0.630371V55.8483H93.0075V41.7871Z" fill="#EFEFEF"/>
+                    <path d="M45.3782 22.338C51.4253 22.338 56.3274 17.4359 56.3274 11.3888C56.3274 5.34165 51.4253 0.439453 45.3782 0.439453C39.3311 0.439453 34.429 5.34165 34.429 11.3888C34.429 17.4359 39.3311 22.338 45.3782 22.338Z" fill="#EFEFEF"/>
+                    <path d="M45.3774 94.4004C51.4245 94.4004 56.3268 89.4983 56.3268 83.4512C56.3268 77.4041 51.4245 72.502 45.3774 72.502C39.3303 72.502 34.4282 77.4041 34.4282 83.4512C34.4282 89.4983 39.3303 94.4004 45.3774 94.4004Z" fill="#EFEFEF"/>
+                </svg>                                             
+            </div>
+            <div class="equality uk-position-absolute bottom-[0] right-[174px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
+                <svg width="47" height="25" viewBox="0 0 47 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M46.7802 0.331055H0.151367V7.42865H46.7802V0.331055Z" fill="#EFEFEF"/>
+                    <path d="M46.7802 17.0137H0.151367V24.1113H46.7802V17.0137Z" fill="#EFEFEF"/>
+                </svg>                                                 
+            </div>
+            <div class="plus uk-position-absolute bottom-[0] left-[35px] sm:left-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.8231 9.31348H0.627197V12.5398H21.8231V9.31348Z" fill="#EFEFEF"/>
+                    <path d="M12.8384 0.328125H9.61206V21.524H12.8384V0.328125Z" fill="#EFEFEF"/>
+                </svg>                                     
+            </div>
+            <div class="arrow-down-smaller uk-position-absolute bottom-[0] left-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
+                <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.65438 0.554688L0.869141 2.33993L9.17273 10.6435L17.4763 2.33993L15.6911 0.554688L9.17273 7.07303L2.65438 0.554688Z" fill="#EFEFEF"/>
+                </svg>                                                       
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="uk-section uk-padding-remove-bottom uk-margin-large-top">
+    <div class="uk-container uk-container-large">
+        <!-- footer for desktop -->
+        <div class="uk-flex uk-flex-between uk-visible@s">
+            <div class="footer-social-details">
+                <a href="index.html">
+                    <img class="w-[180px]" src="../assets/img/logo/almuda.svg" alt="Brend">
+                </a>
+                <ul class="mt-[32px]" uk-grid>
+                    <li class="color-00">
+                        <a href="#" class="color-00 font-500 hover-link">Facebook</a>
+                    </li>
+                    <li class="color-00">
+                        <a href="#" class="color-00 font-500 hover-link">Telegram</a>
+                    </li>
+                    <li class="color-00">
+                        <a href="#" class="color-00 font-500 hover-link">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center">
+                <div class="uk-flex uk-flex-right flex-col">
+                    <div>
+                        <ul class="uk-grid-medium uk-flex-right" uk-grid>
+                            <li class="color-00">
+                                <a href="#advantages" class="color-00 font-600 text-xl hover-link">Afzalliklar</a>
+                            </li>
+                            <li class="color-00">
+                                <a href="#whyUS" class="color-00 font-600 text-xl hover-link">Nega aynan biz?</a>
+                            </li>
+                            <li class="color-00">
+                                <a href="#services" class="color-00 font-600 text-xl hover-link">Xizmatlar</a>
+                            </li>
+                            <li class="color-00">
+                                <a href="#deals" class="color-00 font-600 text-xl hover-link">Tariflar</a>
+                            </li>
+                            <li class="color-00">
+                                <a href="#map" class="color-00 font-600 text-xl hover-link">Harita</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-[60px] footer-contcat-details">
+                        <ul class="uk-grid-large uk-flex-middle uk-flex-right uk-margin-remove" uk-grid>
+                            <li class="color-00">
+                                <a href="#" class="color-00 font-500 hover-link">almuda@gmail.com</a>
+                            </li>
+                            <li class="color-00">
+                                <a href="#" class="color-00 font-500 hover-link">+998 97 900 40 20 </a>
+                            </li>
+                            <li class="color-00">
+                                <a href="#" class="color-00 font-500 hover-link">Bu joyiga almuda kompaniyasini joylashuvi yoziladi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ml-[50px] color-00 uk-visible@m">
+                    <a href="#header" class="w-[95px] h-[95px] rounded-full bg-[#10A0E7] flex flex-col items-center justify-center hover-link">
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.62318 1L6.62318 15" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.00012 6.64648C1.00012 6.64648 4.04372 0.999818 6.62158 0.999818C9.20132 0.999818 12.2458 6.64648 12.2458 6.64648" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p class="w-[50px] text-[#fff] font-600 uk-text-center leading-[15px]">Back to top</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer for mobile -->
+        <div class="uk-child-width-1-1 uk-flex-center uk-hidden@s" uk-grid>
+            <div class="flex justify-center">
+                <a href="index.html" class="uk-display-inline-block">
+                    <img class="w-[150px]" src="../assets/img/logo/almuda.svg" alt="Brend">
+                </a>
+            </div>
+            <div>
+                <ul class="uk-child-width-1-1 uk-flex-center uk-text-center uk-grid-small" uk-grid>
+                    <li class="color-00">
+                        <a href="#advantages" class="color-00 font-600 text-xl hover-link">Afzalliklar</a>
+                    </li>
+                    <li class="color-00">
+                        <a href="#whyUS" class="color-00 font-600 text-xl hover-link">Nega aynan biz?</a>
+                    </li>
+                    <li class="color-00">
+                        <a href="#services" class="color-00 font-600 text-xl hover-link">Xizmatlar</a>
+                    </li>
+                    <li class="color-00">
+                        <a href="#deals" class="color-00 font-600 text-xl hover-link">Tariflar</a>
+                    </li>
+                    <li class="color-00">
+                        <a href="#map" class="color-00 font-600 text-xl hover-link">Harita</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="uk-grid-small uk-flex-center uk-child-width-1-1 uk-text-center" uk-grid>
+                    <li class="color-00">
+                        <a href="#" class="color-00 font-500 hover-link">almuda@gmail.com</a>
+                    </li>
+                    <li class="color-00">
+                        <a href="#" class="color-00 font-500 hover-link">+998 97 900 40 20 </a>
+                    </li>
+                    <li class="color-00">
+                        <a href="#" class="color-00 font-500 hover-link">Bu joyiga almuda kompaniyasini joylashuvi yoziladi</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="uk-child-width-1-3 uk-flex-center uk-text-center uk-grid-small" uk-grid>
+                    <li class="color-00">
+                        <a href="#" class="color-00 font-500 hover-link text-sm">Facebook</a>
+                    </li>
+                    <li class="color-00">
+                        <a href="#" class="color-00 font-500 hover-link text-sm">Telegram</a>
+                    </li>
+                    <li class="color-00">
+                        <a href="#" class="color-00 font-500 hover-link text-sm">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mt-[42px] py-[42px] border-t-2 border-[#88D0F3]">
+        <div class="uk-container uk-container-large">
+            <div class="uk-flex-middle uk-flex-between@s uk-flex-center uk-text-center uk-grid-large" uk-grid>
+                <div class="uk-width-1-1 uk-width-auto@s">
+                    <p class="text-lg font-500 color-00">© Almuda barcha huqular himoyalangan</p>
+                </div>
+                <div>
+                    <a href="https://mount.uz">
+                        <img class="w-[100px]" src="../assets/img/logo/mountain.svg" alt="Mountain It&Design Company">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="color-00 uk-hidden@m flex justify-center mt-[56px]">
+            <a href="#header" class="w-[95px] h-[95px] rounded-full bg-[#10A0E7] flex flex-col items-center justify-center hover-link">
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.62318 1L6.62318 15" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.00012 6.64648C1.00012 6.64648 4.04372 0.999818 6.62158 0.999818C9.20132 0.999818 12.2458 6.64648 12.2458 6.64648" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="w-[50px] text-[#fff] font-600 uk-text-center leading-[15px]">Back to top</p>
+            </a>
+        </div>
+    </div>
+</footer>
 
 <script src="../assets/js/uikit-icons.min.js"></script>
 <script src="../assets/js/uikit.min.js"></script>
+<script src="../assets/js/main.js"></script>
 
 </body>
 </html>

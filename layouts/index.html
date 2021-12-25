@@ -24,7 +24,7 @@
     </div>
     
     <div id="header" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#10A0E7] border-opacity-[0.42]; cls-inactive: uk-navbar-transparent z-[9] mt-[32px]; top: 200;" class="navbar">
-        <header class="header absolute top-0 left-0 w-full z-10">
+        <header class="header absolute top-0 left-0 w-full z-10 uk-overflow-hidden" uk-scrollspy="target: .animLeft; cls: uk-animation-slide-left-medium; delay: 100;">
             
             <div class="uk-container uk-container-large">
                 <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px] sm:py-[30px]">     
@@ -32,35 +32,35 @@
                         <div>
                             <div>
                                 <a href="index.html">
-                                    <img class="w-[140px] md:w-[182px]" src="../assets/img/logo/almuda.svg" alt="Logo">
+                                    <img class="w-[140px] md:w-[182px] uk-animation-fade" src="../assets/img/logo/almuda.svg" alt="Logo">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="uk-visible@l uk-navbar-center uk-margin-remove-top">
                         <ul class="uk-flex-middle" uk-grid>
-                            <li class="text-[#222222] uk-padding-remove-left">
-                                <a href="#advantages" class="text-lg font-500 color-222 hover-link uk-animation-fade">
+                            <li class="text-[#222222] uk-padding-remove-left animLeft">
+                                <a href="#advantages" class="text-lg font-500 color-222 hover-link">
                                     Afzalliklar
                                 </a>
                             </li>
-                            <li class="text-[#222222]">
-                                <a href="#whyUS" class="text-lg font-500 color-222 hover-link uk-animation-fade">
+                            <li class="text-[#222222] animLeft">
+                                <a href="#whyUS" class="text-lg font-500 color-222 hover-link">
                                     Nega aynan biz?
                                 </a>
                             </li>
-                            <li class="text-[#222222]">
-                                <a href="#services" class="text-lg font-500 color-222 hover-link uk-animation-fade">
+                            <li class="text-[#222222] animLeft">
+                                <a href="#services" class="text-lg font-500 color-222 hover-link">
                                     Xizmatlar
                                 </a>
                             </li>
-                            <li class="text-[#222222]">
-                                <a href="#deals" class="text-lg font-500 color-222 hover-link uk-animation-fade">
+                            <li class="text-[#222222] animLeft">
+                                <a href="#deals" class="text-lg font-500 color-222 hover-link">
                                     Tariflar
                                 </a>
                             </li>
-                            <li class="text-[#222222]">
-                                <a href="#map" class="text-lg font-500 color-22 hover-link uk-animation-fade">
+                            <li class="text-[#222222] animLeft">
+                                <a href="#map" class="text-lg font-500 color-22 hover-link">
                                     Harita
                                 </a>
                             </li>
@@ -69,7 +69,7 @@
                     <div class="uk-navbar-right w-[300px]">
                         <div class="uk-flex-middle 2xl:space-x-[30px] ml-[auto]" uk-grid>
                             
-                            <div class="text-[#002C6D] uk-visible@l uk-animation-fade">
+                            <div class="text-[#002C6D] uk-visible@l uk-animation-slide-right">
                                 <a href="#" class="uk-flex uk-flex-middle hover-link">
                                     <div class="bg-[#10A0E7] rounded-full uk-flex uk-flex-middle uk-flex-center w-[42px] h-[42px]">
                                         <img src="../assets/img/svg/call-nav.svg" alt=call"">
@@ -175,7 +175,7 @@
         </header>
     </div>
     
-    <main class="main-section uk-section uk-position-relative uk-overflow-hidden uk-padding-remove-vertical z-[1]" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
+    <main class="main-section uk-section uk-position-relative uk-overflow-hidden uk-padding-remove-vertical z-[1]" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 200; repeat: true">
         <div>
             <ul class="uk-padding-remove">
                 <li class="main-contents-wrapper uk-height-1-1 uk-cover-container h-[720px] sm:h-[100vh]" style="min-height: 680px;">
@@ -193,8 +193,8 @@
                                 <p class="color-222 text-[18px] mt-[12px] uk-width-3-4@s animTop">
                                     Biz xizmatlarimizda aniqlikga, tezlikga va omonatdorlikga kuchli eʼtibor qaratamiz.
                                 </p>
-                                <div class="mt-[32px] uk-display-inline-block text-[#fff]">
-                                    <a href="#adviceModal" uk-toggle class="main-section-btn pr-[17px] flex items-center rounded-full color-00 hover-link duration-300 text-lg animTop group relative">
+                                <div class="mt-[32px] uk-display-inline-block text-[#fff] uk-animation-fade">
+                                    <a href="#adviceModal" uk-toggle class="main-section-btn pr-[17px] flex items-center rounded-full color-00 hover-link duration-300 text-lg group relative">
                                         <div class="bg-[#10A0E7] w-[40px] py-[10px] rounded-full absolute group-hover:w-full duration-500 z-[1] flex items-center">
                                             <svg class="ml-[10px] main-section-btn-arrow duration-500" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.4302 0.929688L18.5002 6.99969L12.4302 13.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -315,10 +315,10 @@
     </div>
 </main>
 
-<section id="advantages" class="uk-section advantage-section uk-padding-remove-top">
+<section id="advantages" class="uk-section advantage-section uk-padding-remove-top" uk-scrollspy="target: .animTop;cls: uk-animation-slide-top-medium; delay: 100;">
     <div class="uk-container uk-container-large" uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
         <div class="uk-width-3-4@m uk-width-3-5@l mx-auto">
-            <h2 class="heading-second uk-text-center color-00" uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
+            <h2 class="heading-second uk-text-center color-00 animTop">
                 Buxgalteriya xizmatlarini <span class="text-[#10A0E8]">outsorsing</span> qilishning
                 afzallik tomonlari
             </h2>
@@ -326,12 +326,12 @@
         <div class="uk-visible@l border-[3px] border-[#10A0E7] border-opacity-[0.42] rounded-[42px] py-[35px] px-[65px] uk-margin-large-top">
             <div class="uk-flex-between" uk-grid>
                 <div class="xl:w-[45%]">
-                    <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto animFade">
+                    <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto animTop">
                         Outsours korxonaning 
                         afzallik tomonlari
                     </h3>
                     <ul class="uk-grid-small uk-child-width-1-1 mt-[30px] sm:mt-[42px] animFade" uk-grid>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -341,7 +341,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -352,7 +352,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -363,7 +363,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -373,7 +373,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -383,7 +383,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -395,7 +395,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -414,12 +414,12 @@
                 </div>
                 
                 <div class="xl:w-[45%]">
-                    <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto animFade">
+                    <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto animTop">
                         Shaxsiy buxgalter
                         yollashning kamchiliklari
                     </h3>
                     <ul class="uk-grid-small uk-child-width-1-1 mt-[30px] sm:mt-[42px] animFade" uk-grid>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -429,7 +429,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -440,7 +440,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -451,7 +451,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -461,7 +461,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -471,7 +471,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -483,7 +483,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="animTop">
                             <div class="uk-grid-collapse group" uk-grid>
                                 <div>
                                     <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -500,19 +500,19 @@
         </div>
         
         <div class="uk-hidden@l uk-margin-large-top">
-            <div class="uk-slider-container-offset" uk-slider="autoplay: true">
+            <div class="uk-slider-container-offset" uk-slider>
                 
                 <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
                     
                     <ul class="uk-slider-items uk-child-width-1-1 uk-grid">
                         <li>
                             <div class="border-2 border-[#10A0E7] border-opacity-[0.42] rounded-[42px] uk-padding">
-                                <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto">
+                                <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto animTop">
                                     Outsours korxonaning 
                                     afzallik tomonlari
                                 </h3>
                                 <ul class="uk-grid-small uk-child-width-1-1 mt-[30px] sm:mt-[42px]" uk-grid>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -522,7 +522,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -533,7 +533,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -544,7 +544,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -554,7 +554,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -564,7 +564,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -576,7 +576,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[15px] mt-[6px]" alt="pulse" src="../assets/img/svg/pulse.svg">                       
@@ -593,12 +593,12 @@
                         
                         <li>
                             <div class="border-2 border-[#10A0E7] border-opacity-[0.42] rounded-[42px] uk-padding">
-                                <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto">
+                                <h3 class="heading-third text-[#002C6D] font-600 uk-width-3-4@l uk-text-center mx-auto animTop">
                                     Shaxsiy buxgalter
                                     yollashning kamchiliklari
                                 </h3>
                                 <ul class="uk-grid-small uk-child-width-1-1 mt-[30px] sm:mt-[42px]" uk-grid>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -608,7 +608,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -619,7 +619,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -630,7 +630,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -640,7 +640,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -650,7 +650,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -662,7 +662,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="animTop">
                                         <div class="uk-grid-collapse group" uk-grid>
                                             <div>
                                                 <img class="w-[12px] mt-[12px]" alt="minus" src="../assets/img/svg/minus.svg">                       
@@ -689,9 +689,9 @@
 </section>
 
 <section class="uk-section uk-overflow-hidden">
-    <div class="uk-container uk-container-large" uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
+    <div class="uk-container uk-container-large" uk-scrollspy="target: .animFade; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
         <div class="uk-grid-large uk-flex-middle xl:px-[30px]" uk-grid>
-            <div class="uk-width-1-2@l uk-flex uk-flex-center">
+            <div class="uk-width-1-2@l uk-flex uk-flex-center"  uk-scrollspy="cls: uk-animation-slide-left; delay: 300;">
                 <img class="w-full sm:w-[540px] object-cover" alt="head" src="../assets/img/main/headache-img.png">
             </div>
             <div class="uk-width-expand">
@@ -744,7 +744,7 @@
     </div>
 </section>
 
-<section class="account-section uk-section bg-no-repeat uk-position-relative w-full h-full bg-cover uk-margin-large-top" style="background-image: url('../assets/img/main/quotection-img.png');">
+<section class="account-section uk-section bg-no-repeat uk-position-relative w-full h-full bg-cover uk-margin-large-top uk-overflow-hidden" style="background-image: url('../assets/img/main/quotection-img.png');"  uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
     <div class="uk-container uk-container-large z-[2] uk-position-relative">
         <div class="uk-flex-between uk-flex-middle" uk-grid>
             <div class="xl:w-[780px] 2xl:w-[860px]">
@@ -753,7 +753,7 @@
                     xarajatlarni 50% gacha kamaytirishingiz
                     mumkinligini bilarmidingiz?
                 </h2>
-                <div class="mt-[40px] uk-display-inline-block text-[#fff] uk-visible@s">
+                <div class="mt-[40px] uk-display-inline-block text-[#fff] uk-visible@s" uk-scrollspy="cls: uk-animation-slide-left; delay: 100; repeat: true">
                     <a href="#" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">
                         <svg class="mr-[15px]" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.4302 0.929688L18.5002 6.99969L12.4302 13.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -764,7 +764,7 @@
                 </div>
             </div>
             <div class="uk-width-expand@l">
-                <div class="xl:ml-[70px] text-[#fff]">
+                <div class="xl:ml-[70px] text-[#fff] animTop">
                     <p class="text-lg text-[#fff]">Murojaat uchun:</p>
                     <a href="#" class="text-[26px] sm:text-[36px] 2xl:text-[42px] font-gilroy text-[#fff] font-bold mt-[5px] hover-link hover:text-[#ffffffde] duration-200">
                         +998 97 900 40 20
@@ -827,7 +827,7 @@
     </div>
 </section>
 
-<section id="whyUS" class="uk-section uk-margin-large-top">
+<section id="whyUS" class="uk-section uk-margin-large-top" uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: .item; delay: 300; repeat: true">
     <div class="uk-container uk-container-large" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
         <div class="uk-width-3-4@m uk-width-3-5@l mx-auto">
             <h2 class="heading-second uk-text-center color-00 animTop">
@@ -836,7 +836,7 @@
         </div>
         <div uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
             <ul class="uk-child-width-1-4@l uk-child-width-1-2@s why-work-us-list mt-[150px]" uk-grid>
-                <li class="animFade">
+                <li class="animFade" uk-scrollspy-class="uk-animation-slide-top">
                     <div class="border-[3px] border-[#10A0E7] border-opacity-[0.72] rounded-[22px] pt-[70px] px-[20px]  uk-position-relative pb-[10px]">
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
@@ -855,7 +855,7 @@
                         </p>
                     </div>
                 </li>
-                <li class="animFade">
+                <li class="animFade item">
                     <div class="border-[3px] border-[#10A0E7] border-opacity-[0.72] rounded-[22px] pt-[70px] px-[20px] uk-position-relative pb-[10px]">
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
@@ -872,7 +872,7 @@
                         </p>
                     </div>
                 </li>
-                <li class="animFade">
+                <li class="animFade" uk-scrollspy-class="uk-animation-slide-top">
                     <div class="border-[3px] border-[#10A0E7] border-opacity-[0.72] rounded-[22px] pt-[70px] px-[20px]  uk-position-relative pb-[10px]">
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
@@ -890,7 +890,7 @@
                         </p>
                     </div>
                 </li>
-                <li class="animFade">
+                <li class="animFade item">
                     <div class="border-[3px] border-[#10A0E7] border-opacity-[0.72] rounded-[22px] pt-[70px] px-[20px]  uk-position-relative pb-[10px]">
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
@@ -914,15 +914,15 @@
 </section>
 
 <section id="services" class="uk-section">
-    <div class="uk-container uk-container-large" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
+    <div class="uk-container uk-container-large" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top; delay: 300; repeat: true">
         <div class="uk-width-3-4@m uk-width-3-5@l mx-auto">
-            <h2 class="heading-second uk-text-center color-00 animTop">
+            <h2 class="heading-second uk-text-center color-00" uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
                 Bizda qanday xizmatlar mavjud?
             </h2>
         </div>
         <div uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
             <ul class="services-list uk-child-width-1-4@l uk-child-width-1-2@s mt-[40px] sm:mt-[70px]" uk-grid>
-                <li class="animFade">
+                <li class="animFade animTop">
                     <div class="services-list-item bg-[#fff] rounded-[22px] py-[20px] px-[30px] uk-overflow-hidden uk-position-relative">
                         <div class="uk-position-relative z-[2]">
                             <span class="color-00 opacity-22 font-600 text-[28px]">01</span>
@@ -1009,7 +1009,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="animFade">
+                <li class="animFade animTop">
                     <div class="services-list-item bg-[#fff] rounded-[22px] py-[20px] px-[30px] uk-overflow-hidden uk-position-relative">
                         <div class="uk-position-relative z-[2]">
                             <span class="color-00 opacity-22 font-600 text-[28px]">02</span>
@@ -1078,7 +1078,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="animFade">
+                <li class="animFade animTop">
                     <div class="services-list-item bg-[#fff] rounded-[22px] py-[20px] px-[30px] uk-overflow-hidden uk-position-relative">
                         <div class="uk-position-relative z-[2]">
                             <span class="color-00 opacity-22 font-600 text-[28px]">03</span>
@@ -1145,7 +1145,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="animFade">
+                <li class="animFade animTop">
                     <div class="services-list-item bg-[#fff] rounded-[22px] py-[20px] px-[30px] uk-overflow-hidden uk-position-relative">
                         <div class="uk-position-relative z-[2]">
                             <span class="color-00 opacity-22 font-600 text-[28px]">04</span>
@@ -1252,7 +1252,7 @@
                     Agar xizmatlarimiz sizni qiziqtirgan bo’sa
                     tariflarimizni yuklab oling
                 </h2>
-                <div class="mt-[50px] uk-display-inline-block text-[#fff]">
+                <div class="mt-[50px] uk-display-inline-block text-[#fff]" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
                     <a href="../assets/img/main/settings-icon.png" target="_blank" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">                                 
                         Yuklab olish
                         <svg class="ml-[12px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1336,23 +1336,23 @@
 </section>
 
 <section class="uk-section uk-margin-large-top uk-margin-large-bottom" uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
-    <div class="uk-container uk-container-large">
+    <div class="uk-container uk-container-large" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
         <div class="uk-grid-large uk-flex-middle uk-flex-center uk-flex-between@l xl:px-[30px]" uk-grid>
             <div class="uk-width-expand@l">
-                <h2 class="heading-second color-00 animFade">
+                <h2 class="heading-second color-00 animTop">
                     Almudaning kelib chiqishi
                     va uning asosiy maqsadi
                 </h2>
-                <p class="text-lg color-00 mt-[32px] 2xl:w-[90%] leading-[22px] animFade">
+                <p class="text-lg color-00 mt-[32px] 2xl:w-[90%] leading-[22px] animTop">
                     Oʻzbekiston Respublikasida ichki bozorni rivojlantirishga koʻp eʼtibor berilayapti. Bu oʻz navbatida korxonani rivojlantirish uchun nafaqat tadbirkorlik boʻlishi kerak, balki soliq va moliyaviy faoliyatni tushinadigan buxgalter ham kerak boʻladi. Ayni vatqda baʼzi bir insonlar tomonidan ishiga sovuq qonlik bilan yondashish natijasida tadbirkorlarning omonatiga hiyonat kuchaygan va hisob kitoblarda aniqlik yoʻqolgan.
                 </p>
-                <p class="text-lg color-00 mt-[26px] 2xl:w-[90%] leading-[22px] animFade">
+                <p class="text-lg color-00 mt-[26px] 2xl:w-[90%] leading-[22px] animTop">
                     Bu oʻz navbatida biznesni orqaga toradigan omil hisoblanadi. Jamiyatda bu kamchiliklarni oldini olish maqsadida ALMUDA korxonasi oʻz faoliyatini boshlagan. Bizning korxonamizda tadbirkorlarning hisob kitoblarda aniqlik, ishonchlilik va Omonatdorlikga e'tibor berilgan
                 </p>
-                <h5 class="sm:text-[24px] font-600 color-00 font-gilroy mt-[32px] animFade">
+                <h5 class="sm:text-[24px] font-600 color-00 font-gilroy mt-[32px] animTop">
                     Asosiy maqsadimiz:
                 </h5>
-                <div class="uk-flex uk-flex-middle mt-[12px] sm:mt-[32px] animFade">
+                <div class="uk-flex uk-flex-middle mt-[12px] sm:mt-[32px] animTop">
                     <div class="mr-[25px] uk-visible@s">
                         <img class="w-[75px]" src="../assets/img/main/goal-point-icon.png" alt="point icon">
                     </div>
@@ -1365,14 +1365,14 @@
                 </div>
             </div>
             <div class="uk-flex uk-flex-center">
-                <img class="w-full md:w-[600px] object-cover animFade" alt="goal" src="../assets/img/main/goal-img.png">
+                <img class="w-full md:w-[600px] object-cover" alt="goal" src="../assets/img/main/goal-img.png" uk-scrollspy="cls: uk-animation-shake; delay: 300; repeat: true">
             </div>
         </div>
     </div>
 </section>
 
-<section id="map" class="uk-section uk-overflow-hidden" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
-    <div class="uk-container uk-container-large uk-margin-large-bottom" uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
+<section id="map" class="uk-section uk-overflow-hidden" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 300; repeat: true">
+    <div class="uk-container uk-container-large uk-margin-large-bottom" uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 300; repeat: true">
         <div class="uk-width-3-4@m uk-width-3-5@l mx-auto">
             <h2 class="heading-second uk-text-center color-00 animTop">
                 Biz bilan hamkorlik haritasi
@@ -1534,7 +1534,7 @@
 </section>
 
 <section class="form-section uk-section bg-no-repeat uk-position-relative w-full h-full bg-cover uk-margin-large-top" style="background-image: url('../assets/img/main/form-back-img.png');">
-    <div class="uk-container uk-container-large z-[2] uk-position-relative">
+    <div class="uk-container uk-container-large z-[2] uk-position-relative" uk-scrollspy="target: .animLeft; cls: uk-animation-slide-left-medium; delay: 300; repeat: true">
         <div>
             <div class="uk-width-1-2@l uk-width-3-4@m">
                 <h2 class="heading-second text-[#fff] animate-pulse">
@@ -1550,12 +1550,12 @@
             </div>
             <form class="mt-[42px] uk-flex-middle uk-grid-medium" uk-grid>
                 <div class="uk-width-1-1 uk-width-auto@m">
-                    <div class="sm:w-[320px]">
+                    <div class="sm:w-[320px] animLeft">
                         <input type="text" placeholder="Muhammadaziz" class="focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
                     </div>
                 </div>
                 <div class="uk-width-1-1 uk-width-auto@s">
-                    <div class="sm:w-[320px]">
+                    <div class="sm:w-[320px] animLeft">
                         <input type="text" placeholder="+998 9X XXX XX XX" class="focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
                     </div>
                 </div>

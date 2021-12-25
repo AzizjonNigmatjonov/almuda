@@ -171,6 +171,34 @@ html {
   margin-left: 20px;
 }
 
+.line-animation {
+  position: relative;
+}
+
+.line-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #10A0E8;
+  bottom: -7px;
+  left: 0;
+  border-radius: 10px;
+}
+
+.line-animation:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #10A0E8;
+  bottom: -7px;
+  left: 0%;
+  border-radius: 10px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
 @-webkit-keyframes topCircle {
   0% {
     -webkit-transform: translate3d(0px, -50%, 75px);

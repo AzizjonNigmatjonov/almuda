@@ -720,6 +720,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 390px;
 }
 
+.bottom-\[-110px\] {
+  bottom: -110px;
+}
+
 .left-\[670px\] {
   left: 670px;
 }
@@ -730,10 +734,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-\[-30px\] {
   right: -30px;
-}
-
-.bottom-\[-110px\] {
-  bottom: -110px;
 }
 
 .z-\[9\] {
@@ -774,8 +774,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
 }
 
-.ml-\[12px\] {
-  margin-left: 12px;
+.ml-\[10px\] {
+  margin-left: 10px;
+}
+
+.ml-\[48px\] {
+  margin-left: 48px;
 }
 
 .mt-\[50px\] {
@@ -788,14 +792,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-\[32px\] {
   margin-top: 32px;
-}
-
-.ml-\[10px\] {
-  margin-left: 10px;
-}
-
-.ml-\[48px\] {
-  margin-left: 48px;
 }
 
 .mt-\[42px\] {
@@ -824,6 +820,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-\[9px\] {
   margin-left: 9px;
+}
+
+.ml-\[12px\] {
+  margin-left: 12px;
 }
 
 .mt-\[5px\] {
@@ -884,10 +884,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hidden {
   display: none;
-}
-
-.h-\[42px\] {
-  height: 42px;
 }
 
 .h-\[3px\] {
@@ -1002,8 +998,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 140px;
 }
 
-.w-\[42px\] {
-  width: 42px;
+.w-\[40px\] {
+  width: 40px;
 }
 
 .w-\[24px\] {
@@ -1020,10 +1016,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[1px\] {
   width: 1px;
-}
-
-.w-\[40px\] {
-  width: 40px;
 }
 
 .w-\[700px\] {
@@ -1151,6 +1143,56 @@ Ensure the default browser behavior of the `hidden` attribute.
 .animate-pulse {
   -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
 }
 
 .flex-col {
@@ -1299,6 +1341,10 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
+.p-\[20px\] {
+  padding: 20px;
+}
+
 .py-\[30px\] {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1381,11 +1427,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -1445,9 +1486,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(34 34 34 / var(--tw-text-opacity));
 }
 
-.text-\[\#002C6D\] {
+.text-\[\#fff\] {
   --tw-text-opacity: 1;
-  color: rgb(0 44 109 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-\[\#1d1d1b\] {
@@ -1455,14 +1496,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(29 29 27 / var(--tw-text-opacity));
 }
 
-.text-\[\#fff\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-\[\#10A0E8\] {
   --tw-text-opacity: 1;
   color: rgb(16 160 232 / var(--tw-text-opacity));
+}
+
+.text-\[\#002C6D\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 44 109 / var(--tw-text-opacity));
 }
 
 .text-opacity-\[0\.42\] {

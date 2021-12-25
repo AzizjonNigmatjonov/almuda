@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="stylesheet" href="../assets/css/base/style.css">
+    <link rel="icon" href="../assets/img/logo/almuda.svg">
     
-    <title>Almuda</title>
+    <title>almuda</title>
     
     <link rel="stylesheet" href="../assets/css/uikit.min.css" />
     <link rel="stylesheet" href="../assets/css/tailwind.css" />
@@ -69,12 +70,14 @@
                     <div class="uk-navbar-right w-[300px]">
                         <div class="uk-flex-middle 2xl:space-x-[30px] ml-[auto]" uk-grid>
                             
-                            <div class="text-[#002C6D] uk-visible@l uk-animation-slide-right">
-                                <a href="#" class="uk-flex uk-flex-middle hover-link">
-                                    <div class="bg-[#10A0E7] rounded-full uk-flex uk-flex-middle uk-flex-center w-[42px] h-[42px]">
-                                        <img src="../assets/img/svg/call-nav.svg" alt=call"">
-                                    </div>
-                                    <span class="ml-[12px] font-600 text-[#002C6D] text-base">+998 (97) 900 40 20</span>
+                            <div class="text-[#fff] uk-visible@l uk-animation-slide-right">
+                                <a href="#" uk-toggle class="main-section-btn pr-[17px] flex items-center rounded-full color-00 hover-link duration-300 text-lg group relative">
+                                    <div class="bg-[#10A0E7] w-[40px] py-[10px] rounded-full absolute group-hover:w-full duration-500 z-[1] flex items-center">
+                                        <img class="ml-[10px] main-section-btn-arrow duration-500" src="../assets/img/svg/call-nav.svg" alt=call"">    
+                                    </div>                               
+                                    <p class="ml-[48px] z-[2] relative font-500">
+                                        +998 (97) 900 40 20
+                                    </p>
                                 </a>
                             </div>
                             
@@ -213,7 +216,7 @@
                                         <p class="text-[88px] sm:text-[150px] font-800 font-gilroy text-[#fff] text-opacity-[0.42] uk-position-relative">
                                             01
                                             <div class="main-square__circle-first w-[70px] h-[70px] sm:w-[120px] sm:h-[120px] bg-[#002C6D] rounded-full uk-position-absolute left-[-35px] sm:left-[-60px] top-1/2 -translate-y-1/2 z-[3] uk-flex uk-flex-middle uk-flex-center">
-                                                <img class="w-[40px] sm:w-[55px]" src="../assets/img/svg/diviser.svg">                                               
+                                                <img class="w-[40px] sm:w-[55px] animate-pulse" src="../assets/img/svg/diviser.svg">                                               
                                             </div>
                                         </p>
                                     </div>
@@ -222,7 +225,7 @@
                                         <p class="text-[88px] sm:text-[150px] font-800 font-gilroy text-[#fff] text-opacity-[0.42] uk-position-relative">
                                             02
                                             <div class="main-square__circle-second w-[70px] h-[70px] sm:w-[120px] sm:h-[120px] bg-[#002C6D] rounded-full uk-position-absolute right-[-35px] sm:right-[-60px] top-1/2 -translate-y-1/2 z-[3] uk-flex uk-flex-middle uk-flex-center">
-                                                <img class="w-[34px] sm:w-[55px]" src="../assets/img/svg/multiple.svg">                                               
+                                                <img class="w-[34px] sm:w-[55px] animate-pulse" src="../assets/img/svg/multiple.svg">                                               
                                             </div>
                                         </p>
                                     </div>
@@ -256,17 +259,17 @@
             <form class="uk-grid-medium mt-[42px] uk-child-width-1-1" uk-grid>
                 <div class="uk-width-1-1 uk-width-auto@m">
                     <div class="sm:w-[320px]">
-                        <input type="text" placeholder="Muhammadaziz" class="focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
+                        <input type="text" placeholder="Muhammadaziz" class="animate-pulse focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
                     </div>
                 </div>
                 <div class="uk-width-1-1 uk-width-auto@s">
                     <div class="sm:w-[320px]">
-                        <input type="text" placeholder="+998 9X XXX XX XX" class="focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
+                        <input type="text" placeholder="+998 9X XXX XX XX" class="animate-pulse focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
                     </div>
                 </div>
                 
                 <div class="mt-[40px] uk-display-inline-block text-[#fff]">
-                    <button class="bg-[#10A0E7] mt-[10px] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">
+                    <button class="bg-[#10A0E7] mt-[10px] py-[7px] px-[26px] animate-pulse flex items-center rounded-full text-[#fff] hover-link text-lg font-500 hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">
                         <svg class="mr-[15px]" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.4302 0.929688L18.5002 6.99969L12.4302 13.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M1.5 7H18.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -278,12 +281,12 @@
             
             <div class="uk-visible@l absolute bottom-0 right-0 md:w-[610px] h-[300px] z-[1] mt-[40px] md:mt-0 z-[-1]">
                 <div class="acount-section-math-wrapper w-full h-full uk-position-relative">
-                    <div class="arrow-down uk-position-absolute top-[25px] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
+                    <div class="arrow-down animate-bounce uk-position-absolute top-[25px] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
                         <svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.14874 0.0263672L0.850098 5.32501L25.4954 29.9703L50.1407 5.32501L44.8421 0.0263672L25.4954 19.373L6.14874 0.0263672Z" fill="#EFEFEF"/>
                         </svg>                             
                     </div>
-                    <div class="division uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
+                    <div class="division animate-pulse uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
                         <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M93.0075 41.7871H0.630371V55.8483H93.0075V41.7871Z" fill="#EFEFEF"/>
                             <path d="M45.3782 22.338C51.4253 22.338 56.3274 17.4359 56.3274 11.3888C56.3274 5.34165 51.4253 0.439453 45.3782 0.439453C39.3311 0.439453 34.429 5.34165 34.429 11.3888C34.429 17.4359 39.3311 22.338 45.3782 22.338Z" fill="#EFEFEF"/>
@@ -296,7 +299,7 @@
                             <path d="M46.7802 17.0137H0.151367V24.1113H46.7802V17.0137Z" fill="#EFEFEF"/>
                         </svg>                                                 
                     </div>
-                    <div class="plus uk-position-absolute bottom-[0] left-[35px] sm:left-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
+                    <div class="plus animate-bounce uk-position-absolute bottom-[0] left-[35px] sm:left-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21.8231 9.31348H0.627197V12.5398H21.8231V9.31348Z" fill="#EFEFEF"/>
                             <path d="M12.8384 0.328125H9.61206V21.524H12.8384V0.328125Z" fill="#EFEFEF"/>
@@ -459,9 +462,9 @@
                 
                 <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
                     
-                    <ul class="uk-slider-items uk-child-width-1-1 uk-grid">
+                    <ul class="uk-slider-items uk-child-width-1-1 uk-grid uk-grid-match">
                         <li>
-                            <div class="border-2 border-[#10A0E7] border-opacity-[0.42] rounded-[42px] uk-padding">
+                            <div class="border-2 border-[#10A0E7] border-opacity-[0.42] rounded-[42px] p-[20px]">
                                 <h3 class="heading-third text-[#002C6D] font-600 uk-text-center mx-auto animTop">
                                     Outsors korxona xizmatlaridan foydalanishning afzalliklari
                                 </h3>
@@ -531,7 +534,7 @@
                         </li>
                         
                         <li>
-                            <div class="border-2 border-[#10A0E7] border-opacity-[0.42] rounded-[42px] uk-padding">
+                            <div class="border-2 border-[#10A0E7] border-opacity-[0.42] rounded-[42px] p-[20px]">
                                 <h3 class="heading-third text-[#002C6D] font-600 uk-text-center mx-auto animTop">
                                     Shaxsiy buxgalter yo'llashning kamchiliklari 
                                 </h3>
@@ -594,7 +597,7 @@
                     
                 </div>
                 
-                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin animate-pulse"></ul>
                 
             </div>
         </div>
@@ -618,7 +621,7 @@
                     <div class="uk-child-width-1-1" uk-grid uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 200; repeat: true">
                         <div class="uk-flex uk-flex-middle">
                             <div class="animTop">
-                                <img src="../assets/img/main/clock-icon.png" alt="clock icon">
+                                <img class="animate-bounce" src="../assets/img/main/clock-icon.png" alt="clock icon">
                             </div>
                             <div class="uk-width-expand ml-[12px] sm:ml-[24px]">
                                 <p class="color-00 text-[20px] sm:text-[28px] xl:text-[32px] font-600 animRight">
@@ -628,7 +631,7 @@
                         </div>
                         <div class="uk-flex uk-flex-middle">
                             <div class="animTop">
-                                <img src="../assets/img/main/settings-icon.png" alt="settings icon">
+                                <img class="animate-spin" src="../assets/img/main/settings-icon.png" alt="settings icon">
                             </div>
                             <div class="uk-width-expand ml-[12px] sm:ml-[24px]">
                                 <p class="color-00 text-[20px] sm:text-[28px] xl:text-[32px] font-600 animRight">
@@ -638,7 +641,7 @@
                         </div>
                         <div class="uk-flex uk-flex-middle">
                             <div class="animTop">
-                                <img src="../assets/img/main/document-icon.png" alt="documents icon">
+                                <img class="animate-pulse" src="../assets/img/main/document-icon.png" alt="documents icon">
                             </div>
                             <div class="uk-width-expand ml-[12px] sm:ml-[24px]">
                                 <p class="color-00 text-[20px] sm:text-[28px] xl:text-[32px] font-600 animRight">
@@ -657,12 +660,12 @@
     <div class="uk-container uk-container-large z-[2] uk-position-relative">
         <div class="uk-flex-between uk-flex-middle" uk-grid>
             <div class="xl:w-[780px] 2xl:w-[860px]">
-                <h2 class="text-[#fff] text-[26px] sm:text-[36px] 2xl:text-[42px] font-bold font-gilroy animate-pulse">
+                <h2 class="text-[#fff] text-[26px] sm:text-[36px] 2xl:text-[42px] font-bold font-gilroy">
                     Aniq buxgalteriya hisob-kitobi bilan
                     xarajatlarni 50% gacha kamaytirishingiz
                     mumkinligini bilarmidingiz?
                 </h2>
-                <div class="mt-[40px] uk-display-inline-block text-[#fff] uk-visible@s" uk-scrollspy="cls: uk-animation-slide-left; delay: 100; repeat: true">
+                <div class="mt-[40px] uk-display-inline-block text-[#fff] uk-visible@s animate-pulse" uk-scrollspy="cls: uk-animation-slide-left; delay: 100; repeat: true">
                     <a href="#" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">
                         <svg class="mr-[15px]" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.4302 0.929688L18.5002 6.99969L12.4302 13.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -675,11 +678,11 @@
             <div class="uk-width-expand@l">
                 <div class="xl:ml-[70px] text-[#fff] animTop">
                     <p class="text-lg text-[#fff]">Murojaat uchun:</p>
-                    <a href="#" class="text-[26px] sm:text-[36px] 2xl:text-[42px] font-gilroy text-[#fff] font-bold mt-[5px] hover-link hover:text-[#ffffffde] duration-200">
+                    <a href="#" class="text-[26px] animate-pulse sm:text-[36px] 2xl:text-[42px] font-gilroy text-[#fff] font-bold mt-[5px] hover-link hover:text-[#ffffffde] duration-200">
                         +998 97 900 40 20
                     </a>
                 </div>
-                <div class="mt-[40px] uk-display-inline-block text-[#fff] uk-hidden@s">
+                <div class="mt-[40px] uk-display-inline-block text-[#fff] uk-hidden@s animate-pulse">
                     <a href="#" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500">
                         <svg class="mr-[15px]" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.4302 0.929688L18.5002 6.99969L12.4302 13.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -693,7 +696,7 @@
     </div>
     <div class="md:absolute bottom-0 right-0 md:w-[610px] h-[300px] z-[1] mt-[40px] md:mt-0">
         <div class="acount-section-math-wrapper w-full h-full uk-position-relative">
-            <div class="square-root uk-position-absolute top-[25] right-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
+            <div class="square-root animate-bounce uk-position-absolute top-[25] right-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.90518 13.7952C5.42497 13.7952 4.94889 13.6048 4.59701 13.2488L0.622803 9.27455L2.11313 7.78422L5.6568 11.3279V1.20195C5.6568 0.841784 5.95072 0.547852 6.31089 0.547852H14.5698V2.65501H7.75981V11.9364C7.75981 12.6899 7.30858 13.3605 6.61309 13.6503C6.3854 13.7497 6.14529 13.7952 5.90518 13.7952Z" fill="#EFEFEF"/>
                 </svg>                                                      
@@ -708,7 +711,7 @@
                     <path d="M2.55125 12.4241L0.427246 10.3001L10.3065 0.420898L20.1857 10.3001L18.0617 12.4241L10.3065 4.6689L2.55125 12.4241Z" fill="#EFEFEF"/>
                 </svg>                  
             </div>
-            <div class="division uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
+            <div class="division animate-pulse uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
                 <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M93.0075 41.7871H0.630371V55.8483H93.0075V41.7871Z" fill="#EFEFEF"/>
                     <path d="M45.3782 22.338C51.4253 22.338 56.3274 17.4359 56.3274 11.3888C56.3274 5.34165 51.4253 0.439453 45.3782 0.439453C39.3311 0.439453 34.429 5.34165 34.429 11.3888C34.429 17.4359 39.3311 22.338 45.3782 22.338Z" fill="#EFEFEF"/>
@@ -721,13 +724,13 @@
                     <path d="M46.7802 17.0137H0.151367V24.1113H46.7802V17.0137Z" fill="#EFEFEF"/>
                 </svg>                                                 
             </div>
-            <div class="plus uk-position-absolute bottom-[0] left-[35px] sm:left-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
+            <div class="plus animate-bounce uk-position-absolute bottom-[0] left-[35px] sm:left-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.8231 9.31348H0.627197V12.5398H21.8231V9.31348Z" fill="#EFEFEF"/>
                     <path d="M12.8384 0.328125H9.61206V21.524H12.8384V0.328125Z" fill="#EFEFEF"/>
                 </svg>                                     
             </div>
-            <div class="arrow-down-smaller uk-position-absolute bottom-[0] left-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
+            <div class="arrow-down-smaller animate-bounce uk-position-absolute bottom-[0] left-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
                 <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.65438 0.554688L0.869141 2.33993L9.17273 10.6435L17.4763 2.33993L15.6911 0.554688L9.17273 7.07303L2.65438 0.554688Z" fill="#EFEFEF"/>
                 </svg>                                                       
@@ -750,7 +753,7 @@
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
                         <div class="w-[100px] h-[100px] rounded-full bg-[#fff] flex items-center justify-center">
-                            <img class="w-[76px] h-[76px]" src="../assets/img/main/key.png" alt="key">
+                            <img class="w-[76px] h-[76px] animate-bounce" src="../assets/img/main/key.png" alt="key">
                         </div>
                     </div>
                     <div class="uk-text-center uk-overflow-hidden">
@@ -769,7 +772,7 @@
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
                         <div class="w-[100px] h-[100px] rounded-full bg-[#fff] flex items-center justify-center">
-                            <img class="w-[76px] h-[76px]" src="../assets/img/main/fly-plate.png" alt="fly">
+                            <img class="w-[76px] h-[76px] animate-spin" src="../assets/img/main/fly-plate.png" alt="fly">
                         </div>
                     </div>
                     <div class="uk-text-center uk-overflow-hidden">
@@ -786,7 +789,7 @@
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
                         <div class="w-[100px] h-[100px] rounded-full bg-[#fff] flex items-center justify-center">
-                            <img class="w-[76px] h-[76px]" src="../assets/img/main/shelm.png" alt="head">
+                            <img class="w-[76px] h-[76px] animate-pulse" src="../assets/img/main/shelm.png" alt="head">
                         </div>
                     </div>
                     <div class="uk-text-center uk-overflow-hidden">
@@ -804,7 +807,7 @@
                         <div class="w-[125px] h-[125px] rounded-full absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center" style="background: rgba(255, 255, 255, 0.42);
                         backdrop-filter: blur(12px);">
                         <div class="w-[100px] h-[100px] rounded-full bg-[#fff] flex items-center justify-center">
-                            <img class="w-[76px] h-[76px]" src="../assets/img/main/message.png" alt="message">
+                            <img class="w-[76px] h-[76px] animate-bounce" src="../assets/img/main/message.png" alt="message">
                         </div>
                     </div>
                     <div class="uk-text-center uk-overflow-hidden">
@@ -1147,11 +1150,11 @@
     <div class="uk-container uk-container-large z-[2] uk-position-relative">
         <div class="uk-text-center">
             <div class="lg:w-[780px] 2xl:w-[860px] mx-auto">
-                <h2 class="text-[#fff] text-[26px] sm:text-[36px] 2xl:text-[42px] font-bold font-gilroy animate-pulse">
+                <h2 class="text-[#fff] text-[26px] sm:text-[36px] 2xl:text-[42px] font-bold font-gilroy">
                     Agar xizmatlarimiz sizni qiziqtirgan bo'lsa tariflarimizni yuklab oling
                 </h2>
                 <div class="mt-[50px] uk-display-inline-block text-[#fff]" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
-                    <a href="../assets/img/main/settings-icon.png" target="_blank" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">                                 
+                    <a href="../assets/img/main/settings-icon.png" target="_blank" class="bg-[#10A0E7] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200 animate-pulse">                                 
                         Yuklab olish
                         <svg class="ml-[12px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1167,7 +1170,7 @@
     
     <div class="md:absolute bottom-0 left-0 md:w-[610px] h-[300px] z-[1] mt-[40px] md:mt-0 hidden lg:block">
         <div class="acount-section-math-wrapper w-full h-full uk-position-relative">
-            <div class="square-root uk-position-absolute top-[25] left-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
+            <div class="square-root animate-bounce uk-position-absolute top-[25] left-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.95486 11.7871C8.36865 11.7871 8.77888 11.623 9.08209 11.3162L12.5066 7.89171L11.2224 6.60752L8.16889 9.66103V0.935692C8.16889 0.625347 7.91562 0.37207 7.60527 0.37207H0.488736V2.18777H6.35676V10.1854C6.35676 10.8346 6.74558 11.4125 7.34487 11.6622C7.54107 11.7478 7.74796 11.7871 7.95486 11.7871Z" fill="#EFEFEF"/>
                 </svg>                                                                       
@@ -1182,7 +1185,7 @@
                     <path d="M2.55125 12.4241L0.427246 10.3001L10.3065 0.420898L20.1857 10.3001L18.0617 12.4241L10.3065 4.6689L2.55125 12.4241Z" fill="#EFEFEF"/>
                 </svg>                  
             </div>
-            <div class="division uk-position-absolute bottom-[0] left-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
+            <div class="division animate-pulse uk-position-absolute bottom-[0] left-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
                 <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M93.0075 41.7871H0.630371V55.8483H93.0075V41.7871Z" fill="#EFEFEF"/>
                     <path d="M45.3782 22.338C51.4253 22.338 56.3274 17.4359 56.3274 11.3888C56.3274 5.34165 51.4253 0.439453 45.3782 0.439453C39.3311 0.439453 34.429 5.34165 34.429 11.3888C34.429 17.4359 39.3311 22.338 45.3782 22.338Z" fill="#EFEFEF"/>
@@ -1195,13 +1198,13 @@
                     <path d="M46.7802 17.0137H0.151367V24.1113H46.7802V17.0137Z" fill="#EFEFEF"/>
                 </svg>                                                 
             </div>
-            <div class="plus uk-position-absolute bottom-[0] right-[35px] sm:right-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
+            <div class="plus uk-position-absolute animate-bounce bottom-[0] right-[35px] sm:right-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.8231 9.31348H0.627197V12.5398H21.8231V9.31348Z" fill="#EFEFEF"/>
                     <path d="M12.8384 0.328125H9.61206V21.524H12.8384V0.328125Z" fill="#EFEFEF"/>
                 </svg>                                     
             </div>
-            <div class="arrow-down-smaller uk-position-absolute bottom-[0] right-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
+            <div class="arrow-down-smaller animate-bounce uk-position-absolute bottom-[0] right-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
                 <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.65438 0.554688L0.869141 2.33993L9.17273 10.6435L17.4763 2.33993L15.6911 0.554688L9.17273 7.07303L2.65438 0.554688Z" fill="#EFEFEF"/>
                 </svg>                                                       
@@ -1211,12 +1214,12 @@
     
     <div class="lg:absolute bottom-0 right-0 md:w-[610px] h-[300px] z-[1] mt-[40px] lg:mt-0 ml-auto">
         <div class="acount-section-math-wrapper w-full h-full uk-position-relative">
-            <div class="arrow-down uk-position-absolute top-[25px] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
+            <div class="arrow-down animate-bounce uk-position-absolute top-[25px] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
                 <svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.14874 0.0263672L0.850098 5.32501L25.4954 29.9703L50.1407 5.32501L44.8421 0.0263672L25.4954 19.373L6.14874 0.0263672Z" fill="#EFEFEF"/>
                 </svg>                             
             </div>
-            <div class="division uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
+            <div class="division animate-pulse uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
                 <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M93.0075 41.7871H0.630371V55.8483H93.0075V41.7871Z" fill="#EFEFEF"/>
                     <path d="M45.3782 22.338C51.4253 22.338 56.3274 17.4359 56.3274 11.3888C56.3274 5.34165 51.4253 0.439453 45.3782 0.439453C39.3311 0.439453 34.429 5.34165 34.429 11.3888C34.429 17.4359 39.3311 22.338 45.3782 22.338Z" fill="#EFEFEF"/>
@@ -1428,7 +1431,7 @@
     <div class="uk-container uk-container-large z-[2] uk-position-relative" uk-scrollspy="target: .animLeft; cls: uk-animation-slide-left-medium; delay: 300; repeat: true">
         <div>
             <div class="uk-width-1-2@l uk-width-3-4@m">
-                <h2 class="heading-second text-[#fff] animate-pulse">
+                <h2 class="heading-second text-[#fff]">
                     Hamkorlik istagingiz yoki biror bir moliyaviy masalalarda savollaringiz bo’lsa marhamat bizga murojaat qiling
                 </h2>
                 <p class="text-[#fff] text-lg uk-width-3-4@s mt-[12px]">
@@ -1438,16 +1441,16 @@
             <form class="mt-[42px] uk-flex-middle uk-grid-medium" uk-grid>
                 <div class="uk-width-1-1 uk-width-auto@m">
                     <div class="sm:w-[320px] animLeft">
-                        <input type="text" placeholder="Muhammadaziz" class="focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
+                        <input type="text" placeholder="Muhammadaziz" class="animate-pulse focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
                     </div>
                 </div>
                 <div class="uk-width-1-1 uk-width-auto@s">
                     <div class="sm:w-[320px] animLeft">
-                        <input type="text" placeholder="+998 9X XXX XX XX" class="focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
+                        <input type="text" placeholder="+998 9X XXX XX XX" class="animate-pulse focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
                     </div>
                 </div>
                 <div>
-                    <button class="rounded-full w-[60px] h-[60px] flex items-center justify-center group" style="background: rgba(16, 160, 232, 0.72);">
+                    <button class="rounded-full animate-pulse w-[60px] h-[60px] flex items-center justify-center group" style="background: rgba(16, 160, 232, 0.72);">
                         <div class="bg-[#10A0E7] w-[50px] h-[50px] group-hover:w-[60px] group-hover:h-[60px] duration-200 rounded-full flex items-center justify-center">
                             <svg class="group-hover:rotate-[360deg] duration-200" width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.473949 3.25426L3.56807 0.160156L17.9595 14.5516L3.56807 28.9429L0.473948 25.8488L11.7713 14.5516L0.473949 3.25426Z" fill="#EFEFEF"/>
@@ -1462,7 +1465,7 @@
     
     <div class="lg:absolute bottom-0 right-0 md:w-[610px] h-[300px] z-[1] mt-[40px] lg:mt-0 ml-auto">
         <div class="acount-section-math-wrapper w-full h-full uk-position-relative">
-            <div class="square-root uk-position-absolute top-[25] right-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
+            <div class="square-root animate-bounce uk-position-absolute top-[25] right-[0px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.90518 13.7952C5.42497 13.7952 4.94889 13.6048 4.59701 13.2488L0.622803 9.27455L2.11313 7.78422L5.6568 11.3279V1.20195C5.6568 0.841784 5.95072 0.547852 6.31089 0.547852H14.5698V2.65501H7.75981V11.9364C7.75981 12.6899 7.30858 13.3605 6.61309 13.6503C6.3854 13.7497 6.14529 13.7952 5.90518 13.7952Z" fill="#EFEFEF"/>
                 </svg>                                                      
@@ -1477,7 +1480,7 @@
                     <path d="M2.55125 12.4241L0.427246 10.3001L10.3065 0.420898L20.1857 10.3001L18.0617 12.4241L10.3065 4.6689L2.55125 12.4241Z" fill="#EFEFEF"/>
                 </svg>                  
             </div>
-            <div class="division uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
+            <div class="division animate-pulse uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
                 <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M93.0075 41.7871H0.630371V55.8483H93.0075V41.7871Z" fill="#EFEFEF"/>
                     <path d="M45.3782 22.338C51.4253 22.338 56.3274 17.4359 56.3274 11.3888C56.3274 5.34165 51.4253 0.439453 45.3782 0.439453C39.3311 0.439453 34.429 5.34165 34.429 11.3888C34.429 17.4359 39.3311 22.338 45.3782 22.338Z" fill="#EFEFEF"/>
@@ -1490,13 +1493,13 @@
                     <path d="M46.7802 17.0137H0.151367V24.1113H46.7802V17.0137Z" fill="#EFEFEF"/>
                 </svg>                                                 
             </div>
-            <div class="plus uk-position-absolute bottom-[0] left-[35px] sm:left-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
+            <div class="plus animate-bounce uk-position-absolute bottom-[0] left-[35px] sm:left-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.8231 9.31348H0.627197V12.5398H21.8231V9.31348Z" fill="#EFEFEF"/>
                     <path d="M12.8384 0.328125H9.61206V21.524H12.8384V0.328125Z" fill="#EFEFEF"/>
                 </svg>                                     
             </div>
-            <div class="arrow-down-smaller uk-position-absolute bottom-[0] left-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
+            <div class="arrow-down-smaller animate-bounce uk-position-absolute bottom-[0] left-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[35px] h-[35px]">
                 <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.65438 0.554688L0.869141 2.33993L9.17273 10.6435L17.4763 2.33993L15.6911 0.554688L9.17273 7.07303L2.65438 0.554688Z" fill="#EFEFEF"/>
                 </svg>                                                       
@@ -1515,13 +1518,13 @@
                 </a>
                 <ul class="mt-[32px]" uk-grid>
                     <li class="color-00">
-                        <a href="#" class="color-00 font-500 hover-link">Facebook</a>
+                        <a href="#" class="color-00 font-500 hover-link line-animation">Facebook</a>
                     </li>
                     <li class="color-00">
-                        <a href="#" class="color-00 font-500 hover-link">Telegram</a>
+                        <a href="#" class="color-00 font-500 hover-link line-animation">Telegram</a>
                     </li>
                     <li class="color-00">
-                        <a href="#" class="color-00 font-500 hover-link">Instagram</a>
+                        <a href="#" class="color-00 font-500 hover-link line-animation">Instagram</a>
                     </li>
                 </ul>
             </div>
@@ -1549,18 +1552,18 @@
                     <div class="mt-[60px] footer-contcat-details">
                         <ul class="uk-grid-large uk-flex-middle uk-flex-right uk-margin-remove" uk-grid>
                             <li class="color-00">
-                                <a href="#" class="color-00 font-500 hover-link">almuda@gmail.com</a>
+                                <a href="#" class="color-00 font-500 hover-link line-animation">almuda@gmail.com</a>
                             </li>
                             <li class="color-00">
-                                <a href="#" class="color-00 font-500 hover-link">+998 97 900 40 20 </a>
+                                <a href="#" class="color-00 font-500 hover-link line-animation">+998 97 900 40 20 </a>
                             </li>
                             <li class="color-00">
-                                <a href="#" class="color-00 font-500 hover-link">Bu joyiga almuda kompaniyasini joylashuvi yoziladi</a>
+                                <a href="#" class="color-00 font-500 hover-link line-animation">Bu joyiga almuda kompaniyasini joylashuvi yoziladi</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="ml-[50px] color-00 uk-visible@m">
+                <div class="ml-[50px] color-00 uk-visible@m animate-pulse">
                     <a href="#header" class="w-[95px] h-[95px] rounded-full bg-[#10A0E7] flex flex-col items-center justify-center hover-link">
                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.62318 1L6.62318 15" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1638,7 +1641,7 @@
                 </div>
             </div>
         </div>
-        <div class="color-00 uk-hidden@m flex justify-center mt-[56px]">
+        <div class="color-00 uk-hidden@m flex justify-center mt-[56px] animate-pulse">
             <a href="#header" class="w-[95px] h-[95px] rounded-full bg-[#10A0E7] flex flex-col items-center justify-center hover-link">
                 <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.62318 1L6.62318 15" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

@@ -44,8 +44,6 @@ html {
     z-index: 2 !important;
     border-radius: 42px;
 }
-
-// navbar start
 .uk-offcanvas-flip .uk-open>.uk-offcanvas-bar {
     background-color: #002C6D;
     width: 350px;
@@ -68,8 +66,6 @@ html {
         letter-spacing: 1px;
     }
 }
-
-// main section start
 .main-square-first {
     animation: topSquare 15s ease 0.4s infinite forwards;
     .main-square__circle-first {
@@ -121,13 +117,9 @@ html {
         margin-top: 43px !important;
     }
 }
-// account section start
-
-// why work us start
 .why-work-us-list > li > div {
     height: 280px;
 }
-// service section start
 .services-list {
     li > .services-list-item {
         height: 440px;
@@ -136,7 +128,6 @@ html {
         margin-top: 12px !important;
     }
 }
-// form section start
 .form-section {
     form {
         input::placeholder {
@@ -148,7 +139,6 @@ html {
         }
     }
 }
-// animation start
 @keyframes topCircle {
     0% {
         transform: translate3d(0px, -50%, 75px);
@@ -310,8 +300,6 @@ html {
         transform: translate3d(0px, 0px, 75px);
     }
 }
-
-// mobile style start
 @media (max-width: 1536px) {
     .main-contents-wrapper {
         margin-top: 50px;

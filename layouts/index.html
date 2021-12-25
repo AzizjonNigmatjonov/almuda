@@ -14,7 +14,7 @@
     
 </head>
 <body>
-
+    
     <div id="overlay" class="uk-position-fixed uk-width-1-1 uk-height-1-1 uk-position-top-left uk-flex uk-flex-center uk-flex-middle" style="background-color: #fff !important; z-index: 10001;">
         <div id="loader">
             <div class="uk-flex flex-col uk-flex-middle uk-flex-center uk-cover-container">
@@ -179,7 +179,7 @@
         </header>
     </div>
     
-    <main class="uk-section uk-position-relative uk-overflow-hidden uk-padding-remove-vertical z-[1]" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
+    <main class="main-section uk-section uk-position-relative uk-overflow-hidden uk-padding-remove-vertical z-[1]" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
         <div>
             <ul class="uk-padding-remove">
                 <li class="main-contents-wrapper uk-height-1-1 uk-cover-container h-[720px] sm:h-[100vh]" style="min-height: 680px;">
@@ -190,20 +190,24 @@
                         <div class="uk-flex-between uk-flex-middle" uk-grid>
                             <div class="uk-width-expand@l">
                                 <h1 class="heading color-00 font-600 font-gilroy animTop">
-                                    Biznesingiz uchun sifatli, 
-                                    ishonchli va halol
-                                    buxgalteriya xizmatlari
+                                    Maslahat olish uchun
+                                    malumotlarni
+                                    kiriting
                                 </h1>
                                 <p class="color-222 text-[18px] mt-[12px] uk-width-3-4@s animTop">
                                     Biz xizmatlarimizda aniqlikga, tezlikga va omonatdorlikga kuchli eʼtibor qaratamiz.
                                 </p>
                                 <div class="mt-[32px] uk-display-inline-block text-[#fff]">
-                                    <a href="#" class="first-btn bg-[#10A0E7] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 animTop hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">
-                                        <svg class="mr-[15px]" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12.4302 0.929688L18.5002 6.99969L12.4302 13.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M1.5 7H18.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                    
-                                        Bepul maslaxat
+                                    <a href="#adviceModal" uk-toggle class="main-section-btn pr-[17px] flex items-center rounded-full text-[#111] hover-link duration-300 text-lg animTop group relative">
+                                        <div class="bg-[#10A0E7] w-[40px] py-[10px] rounded-full absolute group-hover:w-full duration-500 z-[1] flex items-center">
+                                            <svg class="ml-[10px] main-section-btn-arrow duration-500" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.4302 0.929688L18.5002 6.99969L12.4302 13.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1.5 7H18.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>     
+                                        </div>                               
+                                        <p class="ml-[48px] z-[2] relative font-500">
+                                            Maslaxat olish
+                                        </p>
                                     </a>
                                 </div>
                             </div>
@@ -235,6 +239,79 @@
                 </div>
             </li>
         </ul>
+    </div>
+    
+    <div id="adviceModal" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical rounded-[42px] border-[4px] border-[#10A0E7] bg-[#002C6D] px-[30px] py-[60px] sm:px-[70px] w-[760px] relative">
+            
+            <button class="uk-modal-close-default group" type="button" uk-close>
+                <div class="w-[40px] h-[40px] bg-[#10A0E7] rounded-full flex items-center justify-center group-hover:bg-[#10A0E7de]">
+                    <svg class="group-hover:rotate-[360deg] duration-200" style="color: #fff" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.49304 5.52771L20.4077 18.4424L18.4419 20.4082L5.52724 7.49352L7.49304 5.52771Z" fill="#fff"/>
+                        <path d="M18.4419 5.52736L20.4077 7.49316L7.49304 20.4078L5.52724 18.442L18.4419 5.52736Z" fill="#fff"/>
+                    </svg>  
+                </div>                  
+            </button>
+            
+            <h2 class="heading-second text-[#fff]">
+                Maslahat olish uchun
+                malumotlarni
+                kiriting
+            </h2>
+
+            <form class="uk-grid-medium mt-[42px] uk-child-width-1-1" uk-grid>
+                <div class="uk-width-1-1 uk-width-auto@m">
+                    <div class="sm:w-[320px]">
+                        <input type="text" placeholder="Muhammadaziz" class="focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-width-auto@s">
+                    <div class="sm:w-[320px]">
+                        <input type="text" placeholder="+998 9X XXX XX XX" class="focus:border-[#fff] duration-100 py-[12px] px-[40px] w-full rounded-[42px] border-2 border-[#87CFF3] bg-transparent focus:outline-none text-[#fff] text-lg">
+                    </div>
+                </div>
+
+                <div class="mt-[40px] uk-display-inline-block text-[#fff]">
+                    <button class="bg-[#10A0E7] mt-[10px] py-[7px] px-[26px] flex items-center rounded-full text-[#fff] hover-link text-lg font-500 hover:bg-[#10A0E7de] focus:bg-[#10A0E7de] duration-200">
+                        <svg class="mr-[15px]" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.4302 0.929688L18.5002 6.99969L12.4302 13.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.5 7H18.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                    
+                        Maslaxat olish
+                    </button>
+                </div>
+            </form>
+
+            <div class="uk-visible@l absolute bottom-0 right-0 md:w-[610px] h-[300px] z-[1] mt-[40px] md:mt-0 z-[-1]">
+                <div class="acount-section-math-wrapper w-full h-full uk-position-relative">
+                    <div class="arrow-down uk-position-absolute top-[25px] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
+                        <svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.14874 0.0263672L0.850098 5.32501L25.4954 29.9703L50.1407 5.32501L44.8421 0.0263672L25.4954 19.373L6.14874 0.0263672Z" fill="#EFEFEF"/>
+                        </svg>                             
+                    </div>
+                    <div class="division uk-position-absolute bottom-[0] right-[0] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[180px] h-[180px]">
+                        <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M93.0075 41.7871H0.630371V55.8483H93.0075V41.7871Z" fill="#EFEFEF"/>
+                            <path d="M45.3782 22.338C51.4253 22.338 56.3274 17.4359 56.3274 11.3888C56.3274 5.34165 51.4253 0.439453 45.3782 0.439453C39.3311 0.439453 34.429 5.34165 34.429 11.3888C34.429 17.4359 39.3311 22.338 45.3782 22.338Z" fill="#EFEFEF"/>
+                            <path d="M45.3774 94.4004C51.4245 94.4004 56.3268 89.4983 56.3268 83.4512C56.3268 77.4041 51.4245 72.502 45.3774 72.502C39.3303 72.502 34.4282 77.4041 34.4282 83.4512C34.4282 89.4983 39.3303 94.4004 45.3774 94.4004Z" fill="#EFEFEF"/>
+                        </svg>                                             
+                    </div>
+                    <div class="equality uk-position-absolute bottom-[0] right-[174px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[100px] h-[100px]">
+                        <svg width="47" height="25" viewBox="0 0 47 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M46.7802 0.331055H0.151367V7.42865H46.7802V0.331055Z" fill="#EFEFEF"/>
+                            <path d="M46.7802 17.0137H0.151367V24.1113H46.7802V17.0137Z" fill="#EFEFEF"/>
+                        </svg>                                                 
+                    </div>
+                    <div class="plus uk-position-absolute bottom-[0] left-[35px] sm:left-[170px] z-[1] rounded-full bg-[#10A0E8] flex items-center justify-center w-[46px] h-[46px]">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.8231 9.31348H0.627197V12.5398H21.8231V9.31348Z" fill="#EFEFEF"/>
+                            <path d="M12.8384 0.328125H9.61206V21.524H12.8384V0.328125Z" fill="#EFEFEF"/>
+                        </svg>                                     
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
     
     <div class="uk-position-absolute top-1/2 -translate-y-1/2 right-[0px] uk-visible@s">
@@ -615,7 +692,7 @@
     </div>
 </section>
 
-<section class="uk-section">
+<section class="uk-section uk-overflow-hidden">
     <div class="uk-container uk-container-large" uk-scrollspy="target: .animFade; cls: uk-animation-fade; delay: 100; repeat: true">
         <div class="uk-grid-large uk-flex-middle xl:px-[30px]" uk-grid>
             <div class="uk-width-1-2@l uk-flex uk-flex-center">

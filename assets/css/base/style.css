@@ -96,6 +96,26 @@ html {
           animation: bottomCircle 15s ease 0.4s infinite forwards;
 }
 
+.main-section-btn:hover .main-section-btn-arrow {
+  -webkit-transform: translate3d(7px, 0, 75px);
+          transform: translate3d(7px, 0, 75px);
+}
+
+#adviceModal .uk-modal-close-default {
+  top: 40px;
+  right: 40px;
+}
+
+#adviceModal .uk-modal-close-default svg:nth-child(2) {
+  display: none;
+}
+
+.uk-modal {
+  background: rgba(255, 255, 255, 0.5) !important;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 .advantage-section .uk-dotnav > .uk-active > * {
   background-color: #10A0E8;
   border-radius: 4px;
@@ -710,6 +730,10 @@ html {
   .services-list li > .services-list-item {
     height: 440px;
   }
+  #adviceModal .uk-modal-close-default {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 @media (max-width: 765px) {
@@ -721,6 +745,10 @@ html {
   }
   .form-section form button {
     margin-left: 0px;
+  }
+  #adviceModal .uk-modal-close-default {
+    top: 10px;
+    right: 10px;
   }
 }
 

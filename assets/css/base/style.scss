@@ -82,6 +82,26 @@ html {
         animation: bottomCircle 15s ease 0.4s infinite forwards;
     }
 }
+.main-section-btn {
+    &:hover {
+        .main-section-btn-arrow {
+            transform: translate3d(7px, 0, 75px);
+        }
+    }
+}
+#adviceModal {
+    .uk-modal-close-default {
+        top: 40px;
+        right: 40px;
+        svg:nth-child(2) {
+            display: none;
+        }
+    }
+}
+.uk-modal  {
+    background: rgba(255,255,255,0.5) !important;
+    backdrop-filter: blur(10px);
+}
 // advantages section start
 .advantage-section {
     .uk-dotnav>.uk-active>* {
@@ -421,6 +441,12 @@ html {
             height: 440px;
         }
     }
+    #adviceModal {
+        .uk-modal-close-default {
+            top: 20px;
+            right: 20px;
+        }
+    }
 }
 @media (max-width: 765px) {
     .account-section {
@@ -434,6 +460,12 @@ html {
             button {
                 margin-left: 0px;
             }
+        }
+    }
+    #adviceModal {
+        .uk-modal-close-default {
+            top: 10px;
+            right: 10px;
         }
     }
 }

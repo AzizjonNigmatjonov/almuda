@@ -886,6 +886,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-\[3px\] {
   height: 3px;
 }
@@ -924,10 +928,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[300px\] {
   height: 300px;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-\[100px\] {
@@ -982,10 +982,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 95px;
 }
 
-.w-\[200px\] {
-  width: 200px;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1024,6 +1020,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[310px\] {
   width: 310px;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-\[120px\] {
@@ -1288,6 +1288,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 0.72;
 }
 
+.bg-\[\#111\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#fff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1476,6 +1481,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 15px;
 }
 
+.tracking-\[1px\] {
+  letter-spacing: 1px;
+}
+
 .text-\[\#222222\] {
   --tw-text-opacity: 1;
   color: rgb(34 34 34 / var(--tw-text-opacity));
@@ -1659,10 +1668,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:h-\[120px\] {
     height: 120px;
-  }
-
-  .sm\:w-\[300px\] {
-    width: 300px;
   }
 
   .sm\:w-\[550px\] {

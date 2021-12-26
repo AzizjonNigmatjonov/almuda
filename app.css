@@ -17,7 +17,7 @@
         font-family: 'Gilroy';
     }
     .heading-third {
-        @apply text-[26px] sm:text-[30px] 2xl:text-[36px];
+        @apply text-[24px] sm:text-[30px] 2xl:text-[36px];
     }
     .heading-third {
         font-family: 'Gilroy'; font-weight: 500;

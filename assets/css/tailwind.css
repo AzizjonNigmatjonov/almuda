@@ -498,7 +498,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .heading-third {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 @media (min-width: 640px) {
@@ -878,10 +878,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 56px;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -986,8 +982,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 95px;
 }
 
-.w-\[170px\] {
-  width: 170px;
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-full {
@@ -1028,10 +1024,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[310px\] {
   width: 310px;
-}
-
-.w-\[200px\] {
-  width: 200px;
 }
 
 .w-\[120px\] {
@@ -1408,11 +1400,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 20px;
 }
 
-.py-\[20px\] {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .py-\[42px\] {
   padding-top: 42px;
   padding-bottom: 42px;
@@ -1674,6 +1661,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 120px;
   }
 
+  .sm\:w-\[300px\] {
+    width: 300px;
+  }
+
   .sm\:w-\[550px\] {
     width: 550px;
   }
@@ -1702,14 +1693,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 70%;
   }
 
-  .sm\:w-\[410px\] {
-    width: 410px;
-  }
-
-  .sm\:w-\[300px\] {
-    width: 300px;
-  }
-
   .sm\:rounded-\[42px\] {
     border-radius: 42px;
   }
@@ -1724,14 +1707,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 70px;
   }
 
-  .sm\:px-\[30px\] {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   .sm\:py-\[20px\] {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .sm\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .sm\:text-\[150px\] {

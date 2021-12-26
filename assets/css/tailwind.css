@@ -878,6 +878,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 56px;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1195,25 +1199,6 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: spin 1s linear infinite;
 }
 
-@-webkit-keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping {
-  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -1362,6 +1347,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-\[20px\] {
   padding: 20px;
+}
+
+.p-\[15px\] {
+  padding: 15px;
 }
 
 .py-\[30px\] {
@@ -1713,6 +1702,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 70%;
   }
 
+  .sm\:w-\[410px\] {
+    width: 410px;
+  }
+
+  .sm\:w-\[300px\] {
+    width: 300px;
+  }
+
   .sm\:rounded-\[42px\] {
     border-radius: 42px;
   }
@@ -1725,6 +1722,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:px-\[70px\] {
     padding-left: 70px;
     padding-right: 70px;
+  }
+
+  .sm\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .sm\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .sm\:text-\[150px\] {

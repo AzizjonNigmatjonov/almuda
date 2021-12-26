@@ -122,7 +122,8 @@ html {
 }
 .services-list {
     li > .services-list-item {
-        height: 440px;
+        height: auto;
+        padding-bottom: 60px;
     }
     li  ul  li {
         margin-top: 12px !important;
@@ -366,7 +367,7 @@ html {
     }
     .services-list {
         li > .services-list-item {
-            height: 480px;
+           
         }
     }
 }
@@ -390,7 +391,7 @@ html {
 @media (max-width: 1320px) {
     .services-list {
         li > .services-list-item {
-            height: 540px;
+
         }
     }
     .partner-steps-wrapper {
@@ -429,7 +430,7 @@ html {
     }
     .services-list {
         li > .services-list-item {
-            height: 380px;
+            
         }
     }
 }
@@ -451,7 +452,7 @@ html {
     }
     .services-list {
         li > .services-list-item {
-            height: 440px;
+         
         }
     }
     #adviceModal {
@@ -485,7 +486,7 @@ html {
 @media (max-width: 700px) {
     .services-list {
         li > .services-list-item {
-            height: 520px;
+            
         }
     }
 }
@@ -522,14 +523,14 @@ html {
     }
     .services-list {
         li > .services-list-item {
-            height: 380px;
+            height: 440px;
         }
     }
 }
 @media (max-width: 480px) {
     .services-list {
         li > .services-list-item {
-            height: 450px;
+            height: 500px;
         }
     }
 }
@@ -541,7 +542,7 @@ html {
 @media (max-width: 350px) {
     .services-list {
         li > .services-list-item {
-            height: 500px;
+            height: 570px;
         }
     }
 }
@@ -551,7 +552,7 @@ html {
     }
     .services-list {
         li > .services-list-item {
-            height: 560px;
+            height: 660px;
         }
     }
 }

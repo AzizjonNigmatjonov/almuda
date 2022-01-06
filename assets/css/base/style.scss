@@ -9,12 +9,10 @@ html::-webkit-scrollbar {
     height: 7px;
     margin-right: 2px;
 }
-
 html::-webkit-scrollbar-thumb {
     background: linear-gradient(60deg, #10A0E8 43%, #10A0E8 49%);
     border-radius: 12px;
 }
-
 html::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(13deg, #10A0E8 14%, #10A0E8 64%);
 }

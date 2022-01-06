@@ -30,7 +30,7 @@
     </div>
     
     <div id="header" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#10A0E7] border-opacity-[0.42]; cls-inactive: uk-navbar-transparent z-[9] mt-[32px]; top: 200;" class="navbar">
-        <header class="header absolute top-0 left-0 w-full z-10 uk-overflow-hidden" uk-scrollspy="target: .animLeft; cls: uk-animation-slide-left-medium; delay: 100;">
+        <header class="header absolute top-0 left-0 w-full z-10" uk-scrollspy="target: .animLeft; cls: uk-animation-slide-left-medium; delay: 100;">
             
             <div class="uk-container uk-container-large">
                 <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px] sm:py-[30px]">     
@@ -72,8 +72,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="uk-navbar-right w-[300px]">
-                        <div class="uk-flex-middle 2xl:space-x-[30px] ml-[auto]" uk-grid>
+                    <div class="uk-navbar-right">
+                        <div class="uk-flex-middle flex">
                             
                             <div class="text-[#fff] uk-visible@l uk-animation-slide-right">
                                 <a href="#" uk-toggle class="main-section-btn pr-[17px] flex items-center rounded-full color-00 hover-link duration-300 text-lg group relative">
@@ -84,6 +84,33 @@
                                         +998 (97) 900 40 20
                                     </p>
                                 </a>
+                            </div>
+
+                            <div class="uk-visible@l">
+                                <div>
+                                    <a href="#" class="nav-link flex uk-animation-fade hover:text-[#10A0E7] hover:no-underline text-[#222222] lang inline-flex font-600 items-center px-4" uk-scrollspy="cls: uk-animation-slide-right; delay: 200;" style="animation-duration: .8s;">
+                                        UZ
+                                        <svg class="stroke-current ml-[5px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.24" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path opacity="0.64" d="M8.47021 10.74L12.0002 14.26L15.5302 10.74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <div class="uk-padding-remove rounded-[4px]" style="min-width: 100px;" uk-dropdown="pos: bottom-justify;animation: uk-animation-slide-top-small; duration: 200; mode: click">
+                                        
+                                        <ul class="uk-grid uk-grid-small uk-flex-middle uk-flex-column uk-padding-small" uk-grid >
+                                            <li class="uk-width-auto text-[#10A0E7]">
+                                                <a href="https://estetclinic.uz/ru" class="hover-link text-[#222222] font-600">
+                                                    RU
+                                                </a>
+                                            </li>
+                                            <li class="uk-width-auto text-[#10A0E7]">
+                                                <a href="https://estetclinic.uz/en" class="hover-link text-[#222222] font-600">
+                                                    EN
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="uk-hidden@l">

@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.11 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -77,7 +77,7 @@ hr {
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
-abbr[title] {
+abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
@@ -616,12 +616,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.top-\[25\] {
+  top: 25;
+}
+
 .top-\[25px\] {
   top: 25px;
 }
 
 .right-\[0\] {
   right: 0;
+}
+
+.top-\[77px\] {
+  top: 77px;
+}
+
+.right-\[96px\] {
+  right: 96px;
 }
 
 .bottom-\[0\] {
@@ -634,18 +646,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .left-\[35px\] {
   left: 35px;
-}
-
-.top-\[25\] {
-  top: 25;
-}
-
-.top-\[77px\] {
-  top: 77px;
-}
-
-.right-\[96px\] {
-  right: 96px;
 }
 
 .left-\[0\] {
@@ -770,16 +770,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: auto;
 }
 
-.ml-\[auto\] {
-  margin-left: auto;
-}
-
 .ml-\[10px\] {
   margin-left: 10px;
 }
 
 .ml-\[48px\] {
   margin-left: 48px;
+}
+
+.ml-\[5px\] {
+  margin-left: 5px;
 }
 
 .mt-\[50px\] {
@@ -794,22 +794,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 32px;
 }
 
-.mt-\[42px\] {
-  margin-top: 42px;
-}
-
-.mt-\[40px\] {
-  margin-top: 40px;
-}
-
-.mt-\[10px\] {
-  margin-top: 10px;
-}
-
-.mr-\[15px\] {
-  margin-right: 15px;
-}
-
 .mt-\[30px\] {
   margin-top: 30px;
 }
@@ -822,8 +806,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 9px;
 }
 
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
 .ml-\[12px\] {
   margin-left: 12px;
+}
+
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
+.mr-\[15px\] {
+  margin-right: 15px;
 }
 
 .mt-\[5px\] {
@@ -866,6 +862,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 24px;
 }
 
+.mt-\[42px\] {
+  margin-top: 42px;
+}
+
 .mt-\[60px\] {
   margin-top: 60px;
 }
@@ -880,6 +880,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .hidden {
@@ -922,32 +926,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 70px;
 }
 
-.h-\[40px\] {
-  height: 40px;
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-\[300px\] {
   height: 300px;
 }
 
-.h-\[100px\] {
-  height: 100px;
+.h-\[35px\] {
+  height: 35px;
 }
 
-.h-\[180px\] {
-  height: 180px;
+.h-\[100px\] {
+  height: 100px;
 }
 
 .h-\[46px\] {
   height: 46px;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[35px\] {
-  height: 35px;
+.h-\[180px\] {
+  height: 180px;
 }
 
 .h-\[125px\] {
@@ -980,6 +980,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[95px\] {
   height: 95px;
+}
+
+.h-\[40px\] {
+  height: 40px;
 }
 
 .w-full {
@@ -1038,22 +1042,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 34px;
 }
 
-.w-\[760px\] {
-  width: 760px;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-\[180px\] {
-  width: 180px;
-}
-
-.w-\[46px\] {
-  width: 46px;
-}
-
 .w-\[340px\] {
   width: 340px;
 }
@@ -1072,6 +1060,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[35px\] {
   width: 35px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[46px\] {
+  width: 46px;
+}
+
+.w-\[180px\] {
+  width: 180px;
 }
 
 .w-\[125px\] {
@@ -1112,6 +1112,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[150px\] {
   width: 150px;
+}
+
+.w-\[760px\] {
+  width: 760px;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
+.w-\[330px\] {
+  width: 330px;
+}
+
+.w-\[320px\] {
+  width: 320px;
 }
 
 .-translate-y-1\/2 {
@@ -1174,23 +1190,6 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: bounce 1s infinite;
 }
 
-@-webkit-keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin {
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -1215,6 +1214,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-\[4px\] {
+  border-radius: 4px;
 }
 
 .rounded-\[6px\] {
@@ -1245,12 +1248,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 2px;
 }
 
-.border-\[4px\] {
-  border-width: 4px;
-}
-
 .border-\[3px\] {
   border-width: 3px;
+}
+
+.border-\[4px\] {
+  border-width: 4px;
 }
 
 .border-b-2 {
@@ -1303,10 +1306,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(16 160 231 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-\[\#10A0E8\] {
   --tw-bg-opacity: 1;
   background-color: rgb(16 160 232 / var(--tw-bg-opacity));
@@ -1314,6 +1313,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[\#10A0E811\] {
   background-color: #10A0E811;
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-opacity-\[0\.06\] {
@@ -1330,6 +1333,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.stroke-current {
+  stroke: currentColor;
 }
 
 .object-cover {
@@ -1355,34 +1362,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 10px;
 }
 
-.px-\[30px\] {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.py-\[60px\] {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.py-\[12px\] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.px-\[40px\] {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.py-\[7px\] {
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-
-.px-\[26px\] {
-  padding-left: 26px;
-  padding-right: 26px;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-\[35px\] {
@@ -1395,14 +1377,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 65px;
 }
 
+.py-\[7px\] {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.px-\[26px\] {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
 .px-\[20px\] {
   padding-left: 20px;
   padding-right: 20px;
 }
 
+.py-\[12px\] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.px-\[40px\] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .py-\[42px\] {
   padding-top: 42px;
   padding-bottom: 42px;
+}
+
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .pr-\[17px\] {
@@ -1505,6 +1517,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 44 109 / var(--tw-text-opacity));
 }
 
+.text-\[\#10A0E7\] {
+  --tw-text-opacity: 1;
+  color: rgb(16 160 231 / var(--tw-text-opacity));
+}
+
 .text-opacity-\[0\.42\] {
   --tw-text-opacity: 0.42;
 }
@@ -1555,8 +1572,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: #10A0E7de;
 }
 
+.hover\:text-\[\#1d1d1b\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(29 29 27 / var(--tw-text-opacity));
+}
+
 .hover\:text-\[\#ffffffde\]:hover {
   color: #ffffffde;
+}
+
+.hover\:text-\[\#10A0E7\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(16 160 231 / var(--tw-text-opacity));
+}
+
+.hover\:no-underline:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .focus\:border-\[\#fff\]:focus {
@@ -1702,11 +1734,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 30px;
   }
 
-  .sm\:px-\[70px\] {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-
   .sm\:py-\[20px\] {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1715,6 +1742,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:px-\[30px\] {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .sm\:px-\[70px\] {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .sm\:text-\[150px\] {
@@ -1828,12 +1860,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .\32xl\:w-\[90\%\] {
     width: 90%;
-  }
-
-  .\32xl\:space-x-\[30px\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(30px * var(--tw-space-x-reverse));
-    margin-left: calc(30px * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .\32xl\:text-\[42px\] {
